@@ -129,7 +129,23 @@ public int[] productExceptSelf(int[] nums) {
         return prod;
     }
 ```
-- [ ] 5. Maximum Subarray — LC 53
+## 5. Maximum Subarray — LC 53
+
+Kadane Algorithm - finds max subarray
+
+```java
+public int maxSubArray(int[] nums) {
+    int currSum = nums[0];
+    int maxSum = nums[0];
+    for(int i = 1; i < nums.length; i++){
+        //this 0 is the main optimization, negative currSum is not considered
+        currSum = Math.max(currSum,0)+nums[i];
+        maxSum = Math.max(maxSum,currSum);
+    }
+    return maxSum;
+    }
+```
+
 - [ ] 6. Maximum Product Subarray — LC 152
 - [ ] 7. Merge Sorted Array — LC 88
 - [ ] 8. Move Zeroes — LC 283
@@ -142,4 +158,3 @@ public int[] productExceptSelf(int[] nums) {
 - [ ] 15. Sort Colors — LC 75
 - [ ] 16. Rotate Array — LC 189
 - [ ] 17. Majority Element — LC 169
-- [ ] 18. Maximum Subarray Sum — LC 53
