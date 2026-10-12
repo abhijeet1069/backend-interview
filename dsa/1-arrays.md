@@ -134,19 +134,58 @@ public int[] productExceptSelf(int[] nums) {
 Kadane Algorithm - finds max subarray
 
 ```java
+/**
+ * Given an integer array nums, find the subarray with the largest sum, and 
+ * return its sum.
+ * 
+Example 1:
+Input: nums = [-2,1,-3,4,-1,2,1,-5,4]
+Output: 6
+Explanation: The subarray [4,-1,2,1] has the largest sum 6.
+ * 
+*/
 public int maxSubArray(int[] nums) {
     int currSum = nums[0];
     int maxSum = nums[0];
     for(int i = 1; i < nums.length; i++){
-        //this 0 is the main optimization, negative currSum is not considered
-        currSum = Math.max(currSum,0)+nums[i];
+        //at each stage we are asking to extend subarray, or to start a fresh one
+        currSum = Math.max(currSum+nums[i],nums[i]);
         maxSum = Math.max(maxSum,currSum);
     }
     return maxSum;
     }
 ```
 
-- [ ] 6. Maximum Product Subarray — LC 152
+## 6. Maximum Product Subarray — LC 152
+
+```java
+/**
+ * Given an integer array nums, find a subarray that has the largest product, and return the product.
+ * 
+ * Input: nums = [2,3,-2,4]
+   Output: 6
+   Explanation: [2,3] has the largest product 6.
+*/
+public int maxProduct(int[] nums) {
+    int minProd = nums[0];
+    int maxProd = nums[0];
+    int result = nums[0];
+    for(int i = 1; i < nums.length; i++){
+        //property of negative numbers, flips the whole scene
+        //make largest number to smallest and smallest to largest
+        if(nums[i] < 0){
+            int temp = maxProd;
+            maxProd = minProd;
+            minProd = temp;
+        }
+        maxProd = Math.max(maxProd*nums[i],nums[i]);
+        minProd = Math.min(minProd*nums[i],nums[i]);
+        result = Math.max(result,maxProd);
+        }
+        return result;
+    }
+```
+
 - [ ] 7. Merge Sorted Array — LC 88
 - [ ] 8. Move Zeroes — LC 283
 - [ ] 9. Remove Duplicates from Sorted Array — LC 26
