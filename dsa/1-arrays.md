@@ -1,9 +1,9 @@
-## Arrays
+# Arrays
 
 I am noticing that Leetcode is all about finding patterns. And read questions in between
 the lines. Purposefully, it will make you deviate. 
 
-## 1. Two Sum — LC 1
+## 1. Two Sum
 
 ```java
 /**
@@ -29,7 +29,7 @@ public int[] twoSum(int[] nums, int target) {
     }
 ```
 
-## 2. Best Time to Buy and Sell Stock — LC 121
+## 2. Best Time to Buy and Sell Stock
 
 ```java
 /**
@@ -61,7 +61,7 @@ public int maxProfit(int[] prices) {
 }
 ```
 
-## 3. Contains Duplicate — LC 217
+## 3. Contains Duplicate
 
 First intuition is to use a HashMap and check count, but its a wrong abstraction. 
 Used a HashSet and running time reduced to half. If you read carefully, this problem 
@@ -96,7 +96,7 @@ public boolean containsDuplicate(int[] nums) {
     }
 ```
 
-## 4. Product of Array Except Self — LC 238
+## 4. Product of Array Except Self
 
 ```java
 /**
@@ -129,7 +129,7 @@ public int[] productExceptSelf(int[] nums) {
         return prod;
     }
 ```
-## 5. Maximum Subarray — LC 53
+## 5. Maximum Subarray — Kadane algorithm
 
 Kadane Algorithm - finds max subarray
 
@@ -156,7 +156,7 @@ public int maxSubArray(int[] nums) {
     }
 ```
 
-## 6. Maximum Product Subarray — LC 152
+## 6. Maximum Product Subarray - Modified Kadane Algorithm
 
 ```java
 /**
@@ -186,7 +186,7 @@ public int maxProduct(int[] nums) {
     }
 ```
 
-## 7. Merge Sorted Array — LC 88
+## 7. Merge Sorted Array - Mergesort part
 
 ```java
 /**
@@ -230,7 +230,7 @@ public int maxProduct(int[] nums) {
     }
 ```
 
-## 8. Move Zeroes — LC 283
+## 8. Move Zeroes
 
 ```java
 /**
@@ -257,7 +257,7 @@ public void moveZeroes(int[] nums) {
     }
 ```
 
-## 9. Remove Duplicates from Sorted Array — LC 26
+## 9. Remove Duplicates from Sorted Array
 
 ```java
 /**
@@ -278,7 +278,7 @@ public int removeDuplicates(int[] nums) {
     }
 ```
 
-## 10. Remove Element — LC 27
+## 10. Remove Element
 
 ```java
 /**
@@ -303,7 +303,7 @@ public int removeElement(int[] nums, int val) {
     }
 ```
 
-### 11. Squares of a Sorted Array — LC 977
+## 11. Squares of a Sorted Array
 
 ```java
 /**
@@ -337,7 +337,7 @@ public int[] sortedSquares(int[] nums) {
 
 ```
 
-## 12. 3Sum — LC 15
+## 12. 3Sum
 
 ```java
 
@@ -396,7 +396,7 @@ public List<List<Integer>> threeSum(int[] nums) {
 
 ```
 
-## 13. Container With Most Water — LC 11
+## 13. Container With Most Water
 
 ```java
 /**
@@ -433,7 +433,7 @@ public int maxArea(int[] height) {
     }
 ```
 
-## 14. Trapping Rain Water — LC 42
+## 14. Trapping Rain Water
 
 ```java
 /**
@@ -491,7 +491,7 @@ public int trap(int[] height) {
 ```
 
 
-## 15. Sort Colors — LC 75
+## 15. Sort Colors
 
 ```java
 /**
@@ -525,7 +525,7 @@ public void sortColors(int[] nums) {
 }
 ```
 
-## 16. Rotate Array — LC 189
+## 16. Rotate Array
 
 ```java
 /**
@@ -563,7 +563,7 @@ rotate 3 steps to the right: [5,6,7,1,2,3,4]
     }
 ```
 
-## 17. Majority Element — LC 169
+## 17. Majority Element — Boyre Moore voting algorithm
 
 ```java
 /**

@@ -28,15 +28,6 @@ A practical, finite DSA problem set for Java/backend interviews.
 - [x] 17. Majority Element — LC 169
 - [x] 18. Maximum Subarray Sum — LC 53
 
-### Key patterns
-- Prefix/suffix
-- Kadane's algorithm
-- Two pointers
-- In-place modification
-- Dutch National Flag
-
----
-
 ## 2. Sliding Window
 
 - [ ] 19. Maximum Average Subarray I — LC 643
