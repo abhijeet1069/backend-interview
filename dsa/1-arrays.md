@@ -525,5 +525,70 @@ public void sortColors(int[] nums) {
 }
 ```
 
-- [ ] 16. Rotate Array — LC 189
-- [ ] 17. Majority Element — LC 169
+## 16. Rotate Array — LC 189
+
+```java
+/**
+ * Given an integer array nums, rotate the array to the right by k steps, where k is non-negative.
+ * Input: nums = [1,2,3,4,5,6,7], k = 3
+Output: [5,6,7,1,2,3,4]
+Explanation:
+rotate 1 steps to the right: [7,1,2,3,4,5,6]
+rotate 2 steps to the right: [6,7,1,2,3,4,5]
+rotate 3 steps to the right: [5,6,7,1,2,3,4]
+ * 
+*/
+    //uses method of reversal without allocating extra space
+    public void rotate(int[] nums, int k) {
+        int len = nums.length;
+
+        if (len == 0) return;
+
+        k %= len;
+
+        reverse(nums, 0, len - 1);
+        reverse(nums, 0, k - 1);
+        reverse(nums, k, len - 1);
+    }
+
+    private void reverse(int[] nums, int left, int right) {
+        while (left < right) {
+            int temp = nums[left];
+            nums[left] = nums[right];
+            nums[right] = temp;
+
+            left++;
+            right--;
+        }
+    }
+```
+
+## 17. Majority Element — LC 169
+
+```java
+/**
+ * Given an array nums of size n, return the majority element.
+ * You may assume that the majority element always exists in the array.
+ * 
+ * Input: nums = [3,2,3]
+Output: 3
+ * 
+*/
+//uses boyre-moore voting algorithm : works on cancellation
+//this could be solved using a hashmap, but it would store much unnecessary information
+public int majorityElement(int[] nums) {
+    int count = 0; 
+    int candidate = 0;
+          
+    for (int num : nums) {
+        if (count == 0) 
+            candidate = num;
+            
+        if (num == candidate)
+            count++;
+        else 
+            count--; //cancel the opposing votes
+        }
+    return candidate;
+    }
+```
