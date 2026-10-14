@@ -9,24 +9,24 @@ A practical, finite DSA problem set for Java/backend interviews.
 
 ## 1. Arrays & Two Pointers
 
-- [ ] 1. Two Sum — LC 1
-- [ ] 2. Best Time to Buy and Sell Stock — LC 121
-- [ ] 3. Contains Duplicate — LC 217
-- [ ] 4. Product of Array Except Self — LC 238
-- [ ] 5. Maximum Subarray — LC 53
-- [ ] 6. Maximum Product Subarray — LC 152
-- [ ] 7. Merge Sorted Array — LC 88
-- [ ] 8. Move Zeroes — LC 283
-- [ ] 9. Remove Duplicates from Sorted Array — LC 26
-- [ ] 10. Remove Element — LC 27
-- [ ] 11. Squares of a Sorted Array — LC 977
-- [ ] 12. 3Sum — LC 15
-- [ ] 13. Container With Most Water — LC 11
-- [ ] 14. Trapping Rain Water — LC 42
-- [ ] 15. Sort Colors — LC 75
-- [ ] 16. Rotate Array — LC 189
-- [ ] 17. Majority Element — LC 169
-- [ ] 18. Maximum Subarray Sum — LC 53
+- [x] 1. Two Sum — LC 1
+- [x] 2. Best Time to Buy and Sell Stock — LC 121
+- [x] 3. Contains Duplicate — LC 217
+- [x] 4. Product of Array Except Self — LC 238
+- [x] 5. Maximum Subarray — LC 53
+- [x] 6. Maximum Product Subarray — LC 152
+- [x] 7. Merge Sorted Array — LC 88
+- [x] 8. Move Zeroes — LC 283
+- [x] 9. Remove Duplicates from Sorted Array — LC 26
+- [x] 10. Remove Element — LC 27
+- [x] 11. Squares of a Sorted Array — LC 977
+- [x] 12. 3Sum — LC 15
+- [x] 13. Container With Most Water — LC 11
+- [x] 14. Trapping Rain Water — LC 42
+- [x] 15. Sort Colors — LC 75
+- [x] 16. Rotate Array — LC 189
+- [x] 17. Majority Element — LC 169
+- [x] 18. Maximum Subarray Sum — LC 53
 
 ### Key patterns
 - Prefix/suffix
