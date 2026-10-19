@@ -291,7 +291,7 @@ lower-priority areas.
 
 ## Functional Java
 
-- [ ] Lambda expressions
+- [x] Lambda expressions
 - [ ] Functional interfaces
 - [ ] Predicate
 - [ ] Function
@@ -491,7 +491,7 @@ Machine code
 
 ## JPA
 
-- [ ] Entity
+- [x] Entity
 - [ ] Entity lifecycle
 - [ ] Persistence context
 - [ ] EntityManager
