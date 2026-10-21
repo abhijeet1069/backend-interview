@@ -30,9 +30,9 @@ A practical, finite DSA problem set for Java/backend interviews.
 
 ## 2. Sliding Window
 
-- [ ] 19. Maximum Average Subarray I — LC 643
-- [ ] 20. Longest Substring Without Repeating Characters — LC 3
-- [ ] 21. Longest Repeating Character Replacement — LC 424
+- [x] 19. Maximum Average Subarray I — LC 643
+- [x] 20. Longest Substring Without Repeating Characters — LC 3
+- [x] 21. Longest Repeating Character Replacement — LC 424
 - [ ] 22. Permutation in String — LC 567
 - [ ] 23. Find All Anagrams in a String — LC 438
 - [ ] 24. Minimum Size Subarray Sum — LC 209
