@@ -34,7 +34,7 @@ A practical, finite DSA problem set for Java/backend interviews.
 - [x] 20. Longest Substring Without Repeating Characters — LC 3
 - [x] 21. Longest Repeating Character Replacement — LC 424
 - [x] 22. Permutation in String — LC 567
-- [ ] 23. Find All Anagrams in a String — LC 438
+- [x] 23. Find All Anagrams in a String — LC 438
 - [ ] 24. Minimum Size Subarray Sum — LC 209
 - [ ] 25. Minimum Window Substring — LC 76
 - [ ] 26. Sliding Window Maximum — LC 239
