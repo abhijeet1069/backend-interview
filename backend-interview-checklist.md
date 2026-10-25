@@ -748,8 +748,8 @@ Machine code
 
 ## Web Security
 
-- [ ] Authentication
-- [ ] Authorization
+- [x] Authentication
+- [x] Authorization
 - [ ] Sessions
 - [ ] Cookies
 - [ ] JWT
