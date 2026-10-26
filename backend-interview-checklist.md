@@ -851,9 +851,9 @@ Spring Boot
 
 ## Unit Testing
 
-- [ ] JUnit 5
-- [ ] Assertions
-- [ ] Parameterized tests
+- [x] JUnit 5
+- [x] Assertions
+- [x] Parameterized tests
 - [ ] Mockito
 - [ ] Mock
 - [ ] Spy
@@ -898,17 +898,6 @@ Spring Boot
 - [ ] Container lifecycle
 - [ ] Image registries
 
-Understand:
-
-```text
-Dockerfile
-    ↓
-Image
-    ↓
-Container
-```
-
----
 
 # 17. Kubernetes ⭐⭐⭐
 

@@ -39,8 +39,6 @@ A practical, finite DSA problem set for Java/backend interviews.
 - [ ] 25. Minimum Window Substring — LC 76
 - [ ] 26. Sliding Window Maximum — LC 239
 
----
-
 ## 3. Hashing
 
 - [ ] 27. Two Sum — LC 1
