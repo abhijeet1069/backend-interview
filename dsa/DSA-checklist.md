@@ -36,7 +36,7 @@ A practical, finite DSA problem set for Java/backend interviews.
 - [x] 22. Permutation in String — LC 567
 - [x] 23. Find All Anagrams in a String — LC 438
 - [x] 24. Minimum Size Subarray Sum — LC 209
-- [ ] 25. Minimum Window Substring — LC 76
+- [x] 25. Minimum Window Substring — LC 76
 - [ ] 26. Sliding Window Maximum — LC 239
 
 ## 3. Hashing

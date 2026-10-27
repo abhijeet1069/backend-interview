@@ -1,5 +1,24 @@
 # Sliding Window
 
+- Pattern 1: Find the minimum window satisfying a condition
+
+Example: Minimum Window Substring.
+
+Intuition: Make the window valid, then make it as small as possible.
+
+- Pattern 2: Find the maximum window satisfying a condition
+
+Example: Longest Substring Without Repeating Characters.
+
+Intuition: Make the window valid, then expand it as much as possible.
+
+- Pattern 3: Fixed-size sliding window
+
+Example: Maximum sum of any subarray of size k.
+
+Here, the window size is predetermined.
+
+
 ## Max Avg Subarray 1 - Sliding Window of fixed length
 
 ```java
@@ -162,4 +181,64 @@ public int minSubArrayLen(int target, int[] nums) {
         else
             return minlen;
     }
+```
+
+## Min Window Substring
+
+```java
+/**
+ * Given two strings s and t of lengths m and n respectively, return the minimum window substring of s such that every character in t (including duplicates) is included in the window. If there is no such substring, return the empty string "".
+ * 
+ * Input: s = "ADOBECODEBANC", t = "ABC"
+Output: "BANC"
+Explanation: The minimum window substring "BANC" includes 'A', 'B', and 'C' from string t.
+ * 
+*/
+
+public String minWindow(String s, String t) {
+        if (s.isEmpty() || t.isEmpty() || s.length() < t.length()) {
+            return "";
+        }
+
+        int[] freq = new int[128];
+        for (char c : t.toCharArray()) {
+            freq[c]++;
+        }
+
+        int left = 0;
+        int required = t.length();
+
+        int minLen = Integer.MAX_VALUE;
+        int start = 0;
+
+        for (int right = 0; right < s.length(); right++) {
+
+            char c = s.charAt(right);
+            if (freq[c] > 0) {
+                required--; //required is such a counter-intutive solution
+            }
+            freq[c]--;
+
+            while (required == 0) {
+                int len = right - left + 1;
+                if (len < minLen) {
+                    minLen = len;
+                    start = left;
+                }
+
+                char leftChar = s.charAt(left);
+                freq[leftChar]++;
+
+                if (freq[leftChar] > 0) {
+                    required++;
+                }
+                left++;
+            }
+        }
+
+        return minLen == Integer.MAX_VALUE
+                ? ""
+                : s.substring(start, start + minLen);
+    }
+
 ```
