@@ -294,8 +294,6 @@ A comprehensive interview-preparation map for experienced Java/Spring backend ro
 - [ ] `@ControllerAdvice`
 - [ ] `@ExceptionHandler`
 
----
-
 ## Spring Data / Hibernate / JPA ⭐⭐⭐⭐⭐
 
 ### JPA
