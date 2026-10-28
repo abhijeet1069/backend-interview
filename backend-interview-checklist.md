@@ -2,9 +2,9 @@
 
 A comprehensive interview-preparation map for experienced Java/Spring backend roles.
 
-# Suggested High-Level Order
+## Suggested High-Level Order
 
-## Phase 1 — Interview Core
+### Phase 1 — Interview Core
 
 1. [ ] Java
 2. [ ] DSA
@@ -13,7 +13,7 @@ A comprehensive interview-preparation map for experienced Java/Spring backend ro
 5. [ ] REST / HTTP
 6. [ ] JPA / Hibernate
 
-## Phase 2 — Backend Depth
+### Phase 2 — Backend Depth
 
 7. [ ] Java Concurrency
 8. [ ] DBMS
@@ -23,7 +23,7 @@ A comprehensive interview-preparation map for experienced Java/Spring backend ro
 12. [ ] Kafka / Messaging
 13. [ ] Docker
 
-## Phase 3 — Architecture
+### Phase 3 — Architecture
 
 14. [ ] System Design
 15. [ ] Microservices
@@ -32,7 +32,7 @@ A comprehensive interview-preparation map for experienced Java/Spring backend ro
 18. [ ] Cloud
 19. [ ] Kubernetes
 
-## Phase 4 — Interview Execution
+### Phase 4 — Interview Execution
 
 20. [ ] Resume deep dive
 21. [ ] Behavioral questions
@@ -41,161 +41,9 @@ A comprehensive interview-preparation map for experienced Java/Spring backend ro
 24. [ ] System design mock interviews
 25. [ ] Company-specific preparation
 
+## Java ⭐⭐⭐⭐⭐
 
-# 1. DSA / Problem Solving ⭐⭐⭐⭐⭐
-
-## Foundations
-
-- [ ] Big-O
-- [ ] Big-Theta
-- [ ] Big-Omega
-- [ ] Time complexity
-- [ ] Space complexity
-- [ ] Recursion
-- [ ] Iteration vs recursion
-- [ ] Call stack
-- [ ] Mathematical reasoning
-- [ ] Bit manipulation
-
-## Arrays & Strings
-
-- [ ] Array traversal
-- [ ] Prefix sums
-- [ ] Difference arrays
-- [ ] Kadane's algorithm
-- [ ] Two pointers
-- [ ] Sliding window
-- [ ] Sorting
-- [ ] String manipulation
-- [ ] Frequency counting
-- [ ] Hashing
-
-## Hashing
-
-- [ ] HashMap
-- [ ] HashSet
-- [ ] Frequency maps
-- [ ] Hash collisions
-- [ ] Custom hashing
-- [ ] `equals()` + `hashCode()`
-
-## Linked Lists
-
-- [ ] Singly linked list
-- [ ] Doubly linked list
-- [ ] Fast/slow pointers
-- [ ] Reversal
-- [ ] Cycle detection
-- [ ] Merging
-- [ ] Intersection
-
-## Stack / Queue
-
-- [ ] Stack
-- [ ] Queue
-- [ ] Deque
-- [ ] Monotonic stack
-- [ ] Monotonic queue
-- [ ] Expression problems
-
-## Binary Search
-
-- [ ] Standard binary search
-- [ ] First/last occurrence
-- [ ] Search on answer
-- [ ] Rotated arrays
-- [ ] Binary search over ranges
-
-## Trees
-
-- [ ] Binary trees
-- [ ] BST
-- [ ] DFS
-- [ ] BFS
-- [ ] Preorder
-- [ ] Inorder
-- [ ] Postorder
-- [ ] Level-order
-- [ ] Tree height/depth
-- [ ] Path problems
-- [ ] Lowest common ancestor
-- [ ] Balanced trees
-- [ ] Serialization/deserialization
-
-## Heap / Priority Queue
-
-- [ ] Min heap
-- [ ] Max heap
-- [ ] PriorityQueue
-- [ ] Top-K
-- [ ] K-way merge
-- [ ] Median problems
-
-## Backtracking
-
-- [ ] Subsets
-- [ ] Permutations
-- [ ] Combinations
-- [ ] N-Queens
-- [ ] Constraint problems
-- [ ] Decision trees
-- [ ] Pruning
-
-## Graphs
-
-- [ ] Graph representation
-- [ ] BFS
-- [ ] DFS
-- [ ] Connected components
-- [ ] Cycle detection
-- [ ] Topological sorting
-- [ ] DAG
-- [ ] Shortest path
-- [ ] Dijkstra
-- [ ] Bellman-Ford
-- [ ] Union-Find / DSU
-- [ ] Minimum spanning tree
-- [ ] Kruskal
-- [ ] Prim
-- [ ] Bipartite graphs
-
-## Greedy
-
-- [ ] Interval scheduling
-- [ ] Activity selection
-- [ ] Sorting + greedy
-- [ ] Exchange arguments
-- [ ] Heap-based greedy
-
-## Dynamic Programming
-
-- [ ] 1D DP
-- [ ] 2D DP
-- [ ] Knapsack
-- [ ] Subsequence problems
-- [ ] Grid DP
-- [ ] Partition problems
-- [ ] State definition
-- [ ] Transition
-- [ ] Memoization
-- [ ] Tabulation
-- [ ] Space optimization
-
-## Advanced / Lower Priority
-
-- [ ] Trie
-- [ ] Segment tree
-- [ ] Fenwick tree
-- [ ] Bitmask DP
-- [ ] Advanced graph algorithms
-
-> **DSA strategy:** Don't try to memorize algorithms. Build pattern recognition by solving groups of related problems.
-
----
-
-# 2. Java ⭐⭐⭐⭐⭐
-
-## Core Java
+### Core Java
 
 - [ ] Variables and data types
 - [ ] Primitive vs reference types
@@ -216,7 +64,7 @@ A comprehensive interview-preparation map for experienced Java/Spring backend ro
 - [ ] Method overriding
 - [ ] `Object` class
 
-## Strings
+### Strings
 
 - [ ] String immutability
 - [ ] String pool
@@ -224,7 +72,7 @@ A comprehensive interview-preparation map for experienced Java/Spring backend ro
 - [ ] StringBuffer
 - [ ] `==` vs `.equals()`
 
-## Collections
+### Collections
 
 - [ ] List
 - [ ] ArrayList
@@ -247,14 +95,14 @@ A comprehensive interview-preparation map for experienced Java/Spring backend ro
 - [ ] Thread safety
 - [ ] Appropriate use cases
 
-## `equals()` / `hashCode()`
+### `equals()` / `hashCode()`
 
 - [ ] Contract
 - [ ] HashMap behavior
 - [ ] Mutable keys
 - [ ] Custom objects as keys
 
-## Generics
+### Generics
 
 - [ ] Generic classes
 - [ ] Generic methods
@@ -264,7 +112,7 @@ A comprehensive interview-preparation map for experienced Java/Spring backend ro
 - [ ] `? super`
 - [ ] Type erasure
 
-## Exceptions
+### Exceptions
 
 - [ ] Checked exceptions
 - [ ] Unchecked exceptions
@@ -273,7 +121,7 @@ A comprehensive interview-preparation map for experienced Java/Spring backend ro
 - [ ] Try-with-resources
 - [ ] Custom exceptions
 
-## Functional Java
+### Functional Java
 
 - [x] Lambda expressions
 - [ ] Functional interfaces
@@ -289,9 +137,7 @@ A comprehensive interview-preparation map for experienced Java/Spring backend ro
 - [ ] Parallel streams
 - [ ] Optional
 
----
-
-# 3. Java Concurrency ⭐⭐⭐⭐⭐
+## Java Concurrency ⭐⭐⭐⭐⭐
 
 - [ ] Process vs thread
 - [ ] Thread lifecycle
@@ -325,9 +171,7 @@ A comprehensive interview-preparation map for experienced Java/Spring backend ro
 - [ ] Atomicity
 - [ ] Immutability
 
----
-
-# 4. JVM ⭐⭐⭐⭐
+## JVM ⭐⭐⭐⭐
 
 - [ ] JVM architecture
 - [ ] Class loading
@@ -348,28 +192,12 @@ A comprehensive interview-preparation map for experienced Java/Spring backend ro
 - [ ] Memory leaks
 - [ ] OutOfMemoryError
 - [ ] StackOverflowError
+- [ ] Execution Pipeline
 
-### Execution Pipeline
 
-```text
-Java source
-    ↓
-javac
-    ↓
-Bytecode
-    ↓
-JVM
-    ↓
-Interpreter / JIT
-    ↓
-Machine code
-```
+## Spring Framework ⭐⭐⭐⭐⭐
 
----
-
-# 5. Spring Framework ⭐⭐⭐⭐⭐
-
-## Spring Core
+### Spring Core
 
 - [ ] IoC
 - [ ] Dependency Injection
@@ -385,7 +213,7 @@ Machine code
 - [ ] `@Configuration`
 - [ ] `@Bean`
 
-## Dependency Injection
+### Dependency Injection
 
 - [ ] Constructor injection
 - [ ] Setter injection
@@ -395,7 +223,7 @@ Machine code
 - [ ] `@Primary`
 - [ ] Why constructor injection is preferred
 
-## Spring Lifecycle
+### Spring Lifecycle
 
 - [ ] Bean creation
 - [ ] Dependency injection
@@ -406,7 +234,7 @@ Machine code
 - [ ] Prototype scope
 - [ ] Request scope
 
-## AOP
+### AOP
 
 - [ ] Aspect
 - [ ] Join point
@@ -417,11 +245,8 @@ Machine code
 - [ ] CGLIB
 - [ ] Cross-cutting concerns
 
----
 
-# 6. Spring Boot ⭐⭐⭐⭐⭐
-
-## Boot Fundamentals
+## Spring Boot Fundamentals ⭐⭐⭐⭐⭐
 
 - [ ] Auto-configuration
 - [ ] Starters
@@ -436,7 +261,7 @@ Machine code
 - [ ] DevTools
 - [ ] Environment variables
 
-## REST / HTTP
+### REST / HTTP
 
 - [ ] REST principles
 - [ ] HTTP methods
@@ -455,7 +280,7 @@ Machine code
 - [ ] Sorting
 - [ ] Filtering
 
-## Spring MVC
+### Spring MVC
 
 - [ ] DispatcherServlet
 - [ ] Controllers
@@ -471,9 +296,9 @@ Machine code
 
 ---
 
-# 7. Spring Data / Hibernate / JPA ⭐⭐⭐⭐⭐
+## Spring Data / Hibernate / JPA ⭐⭐⭐⭐⭐
 
-## JPA
+### JPA
 
 - [x] Entity
 - [ ] Entity lifecycle
@@ -488,14 +313,14 @@ Machine code
 - [ ] Cascading
 - [ ] Entity relationships
 
-## Relationships
+### Relationships
 
 - [ ] One-to-one
 - [ ] One-to-many
 - [ ] Many-to-one
 - [ ] Many-to-many
 
-## Hibernate
+### Hibernate
 
 - [ ] First-level cache
 - [ ] Second-level cache
@@ -507,7 +332,7 @@ Machine code
 - [ ] Flush
 - [ ] Batch operations
 
-## Transactions
+### Transactions
 
 - [ ] `@Transactional`
 - [ ] Transaction boundaries
@@ -517,11 +342,9 @@ Machine code
 - [ ] Read-only transactions
 - [ ] Proxy limitations
 
----
+## SQL ⭐⭐⭐⭐⭐
 
-# 8. SQL ⭐⭐⭐⭐⭐
-
-## SQL Fundamentals
+### SQL Fundamentals
 
 - [ ] SELECT
 - [ ] INSERT
@@ -534,7 +357,7 @@ Machine code
 - [ ] DISTINCT
 - [ ] LIMIT / OFFSET
 
-## Joins
+### Joins
 
 - [ ] INNER JOIN
 - [ ] LEFT JOIN
@@ -543,7 +366,7 @@ Machine code
 - [ ] Self join
 - [ ] Cross join
 
-## Advanced SQL
+### Advanced SQL
 
 - [ ] Subqueries
 - [ ] Correlated subqueries
@@ -556,7 +379,7 @@ Machine code
 - [ ] `LEAD`
 - [ ] `LAG`
 
-## Database Concepts
+### Database Concepts
 
 - [ ] Primary key
 - [ ] Foreign key
@@ -569,11 +392,9 @@ Machine code
 - [ ] Query plans
 - [ ] `EXPLAIN`
 
----
+## DBMS ⭐⭐⭐⭐
 
-# 9. DBMS ⭐⭐⭐⭐
-
-## Transactions
+### Transactions
 
 - [ ] ACID
 - [ ] Atomicity
@@ -581,7 +402,7 @@ Machine code
 - [ ] Isolation
 - [ ] Durability
 
-## Isolation Levels
+### Isolation Levels
 
 - [ ] Read uncommitted
 - [ ] Read committed
@@ -591,7 +412,7 @@ Machine code
 - [ ] Non-repeatable reads
 - [ ] Phantom reads
 
-## Concurrency
+### Concurrency
 
 - [ ] Locks
 - [ ] Shared locks
@@ -601,7 +422,7 @@ Machine code
 - [ ] Deadlocks
 - [ ] MVCC
 
-## Storage
+### Storage
 
 - [ ] Pages
 - [ ] Records
@@ -610,18 +431,17 @@ Machine code
 - [ ] B-trees
 - [ ] Clustered / non-clustered indexes
 
-## Database Scaling
+### Database Scaling
 
 - [ ] Replication
 - [ ] Read replicas
 - [ ] Sharding
 - [ ] Partitioning
 
----
 
-# 10. System Design ⭐⭐⭐⭐⭐
+## System Design ⭐⭐⭐⭐⭐
 
-## Fundamentals
+### Fundamentals
 
 - [ ] Scalability
 - [ ] Availability
@@ -634,7 +454,7 @@ Machine code
 - [ ] CAP theorem
 - [ ] ACID vs BASE
 
-## Architecture
+### Architecture
 
 - [ ] Monolith
 - [ ] Modular monolith
@@ -645,7 +465,7 @@ Machine code
 - [ ] Reverse proxy
 - [ ] Service discovery
 
-## Distributed Systems
+### Distributed Systems
 
 - [ ] Synchronization
 - [ ] Distributed locks
@@ -660,7 +480,7 @@ Machine code
 - [ ] Circuit breakers
 - [ ] Backpressure
 
-## Caching
+### Caching
 
 - [ ] Redis
 - [ ] Cache-aside
@@ -671,7 +491,7 @@ Machine code
 - [ ] Cache invalidation
 - [ ] Cache stampede
 
-## Messaging
+### Messaging
 
 - [ ] Kafka
 - [ ] RabbitMQ
@@ -685,7 +505,7 @@ Machine code
 - [ ] Exactly-once concepts
 - [ ] Dead-letter queues
 
-## Common Designs to Practice
+### Common Designs to Practice
 
 - [ ] URL shortener
 - [ ] Rate limiter
@@ -699,9 +519,7 @@ Machine code
 - [ ] Ride sharing
 - [ ] Logging system
 
----
-
-# 11. Microservices ⭐⭐⭐⭐⭐
+## Microservices ⭐⭐⭐⭐⭐
 
 - [ ] Microservice principles
 - [ ] Service boundaries
@@ -726,11 +544,9 @@ Machine code
 - [ ] Idempotency
 - [ ] Distributed tracing
 
----
+## Security ⭐⭐⭐⭐⭐
 
-# 12. Security ⭐⭐⭐⭐⭐
-
-## Web Security
+### Web Security
 
 - [x] Authentication
 - [x] Authorization
@@ -751,7 +567,7 @@ Machine code
 - [ ] SSRF
 - [ ] Rate limiting
 
-## Spring Security
+### Spring Security
 
 - [ ] SecurityFilterChain
 - [ ] Authentication
@@ -763,9 +579,7 @@ Machine code
 - [ ] Roles
 - [ ] Authorities
 
----
-
-# 13. Networking ⭐⭐⭐⭐
+## Networking ⭐⭐⭐⭐
 
 Understand what happens when:
 
@@ -785,7 +599,7 @@ Load Balancer
 Spring Boot
 ```
 
-## Topics
+### Topics
 
 - [ ] OSI model
 - [ ] TCP/IP
@@ -809,7 +623,7 @@ Spring Boot
 
 ---
 
-# 14. Operating Systems ⭐⭐⭐
+## Operating Systems ⭐⭐⭐
 
 - [ ] Process
 - [ ] Thread
@@ -829,11 +643,9 @@ Spring Boot
 - [ ] Kernel mode
 - [ ] User mode
 
----
+## Testing ⭐⭐⭐⭐
 
-# 15. Testing ⭐⭐⭐⭐
-
-## Unit Testing
+### Unit Testing
 
 - [x] JUnit 5
 - [x] Assertions
@@ -844,19 +656,19 @@ Spring Boot
 - [ ] Stub
 - [ ] Test isolation
 
-## Integration Testing
+### Integration Testing
 
 - [ ] Spring Boot Test
 - [ ] Testcontainers
 - [ ] Database integration tests
 - [ ] REST integration tests
 
-## API Testing
+### API Testing
 
 - [ ] Postman
 - [ ] REST Assured
 
-## Testing Concepts
+### Testing Concepts
 
 - [ ] Unit vs integration vs E2E
 - [ ] Test pyramid
@@ -865,9 +677,7 @@ Spring Boot
 - [ ] Test data
 - [ ] Contract testing
 
----
-
-# 16. Docker / Containers ⭐⭐⭐⭐
+## Docker / Containers ⭐⭐⭐⭐
 
 - [ ] Images
 - [ ] Containers
@@ -883,7 +693,7 @@ Spring Boot
 - [ ] Image registries
 
 
-# 17. Kubernetes ⭐⭐⭐
+## Kubernetes ⭐⭐⭐
 
 - [ ] Pod
 - [ ] Deployment
@@ -900,9 +710,7 @@ Spring Boot
 - [ ] Scaling
 - [ ] Rolling deployment
 
----
-
-# 18. Cloud ⭐⭐⭐
+## 18. Cloud ⭐⭐⭐
 
 Pick one cloud platform and understand the fundamentals.
 
@@ -918,9 +726,7 @@ Pick one cloud platform and understand the fundamentals.
 - [ ] Monitoring
 - [ ] Secrets / configuration
 
----
-
-# 19. Git ⭐⭐⭐⭐
+## Git ⭐⭐⭐⭐
 
 - [ ] clone
 - [ ] add
@@ -941,11 +747,10 @@ Pick one cloud platform and understand the fundamentals.
 - [ ] Conflict resolution
 - [ ] Recovering from mistakes
 
----
 
-# 20. Build Tools ⭐⭐⭐
+## Build Tools ⭐⭐⭐
 
-## Maven
+### Maven
 
 - [ ] `pom.xml`
 - [ ] Dependencies
@@ -956,16 +761,15 @@ Pick one cloud platform and understand the fundamentals.
 - [ ] Dependency management
 - [ ] Transitive dependencies
 
-## Gradle
+### Gradle
 
 - [ ] `build.gradle`
 - [ ] Dependencies
 - [ ] Tasks
 - [ ] Repositories
 
----
 
-# 21. Linux ⭐⭐⭐
+## Linux ⭐⭐⭐
 
 - [ ] Filesystem
 - [ ] Permissions
@@ -986,9 +790,7 @@ Pick one cloud platform and understand the fundamentals.
 - [ ] systemd basics
 - [ ] Shell scripting basics
 
----
-
-# 22. Observability ⭐⭐⭐⭐
+## Observability ⭐⭐⭐⭐
 
 - [ ] Logging
 - [ ] Metrics
@@ -1007,9 +809,8 @@ Be able to answer:
 
 > "Your API suddenly becomes slow in production. How do you investigate?"
 
----
 
-# 23. Behavioral / HR ⭐⭐⭐⭐⭐
+## 23. Behavioral / HR ⭐⭐⭐⭐⭐
 
 Prepare stories for:
 
@@ -1030,7 +831,7 @@ Prepare stories for:
 - [ ] Why backend?
 - [ ] Why should we hire you?
 
-## STAR Method
+### STAR Method
 
 ```text
 Situation
@@ -1046,7 +847,7 @@ Use real experiences wherever possible.
 
 ---
 
-# 24. Resume / Project Deep Dive ⭐⭐⭐⭐⭐
+## Resume / Project Deep Dive ⭐⭐⭐⭐⭐
 
 Anything on your resume can become an interview question.
 
@@ -1068,9 +869,9 @@ For every project or technology, be able to answer:
 
 ---
 
-# 25. Interview-Specific Skills ⭐⭐⭐⭐⭐
+## Interview-Specific Skills ⭐⭐⭐⭐⭐
 
-## DSA Interview
+### DSA Interview
 
 Practice:
 
@@ -1083,7 +884,7 @@ Practice:
 - [ ] Testing edge cases
 - [ ] Explaining trade-offs
 
-## System Design Interview
+### System Design Interview
 
 Use this general flow:
 
@@ -1105,7 +906,7 @@ Bottlenecks
 Failure handling
 ```
 
-## Backend Interview
+### Backend Interview
 
 Be able to explain:
 
@@ -1129,7 +930,6 @@ Database
 
 Know what happens at every layer.
 
----
 
 # Recommended Preparation Strategy
 
@@ -1186,7 +986,7 @@ The goal is to become progressively better at:
 - Defending your experience
 
 
-# Final Rule
+## Final Rule
 
 Do not wait until this entire checklist is complete before applying.
 
