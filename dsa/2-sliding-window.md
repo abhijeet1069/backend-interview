@@ -67,7 +67,7 @@ public int lengthOfLongestSubstring(String s) {
         Set<Character> set = new HashSet<>();
         for(int r = 0; r < s.length(); r++){
 
-            while(set.contains(s.charAt(r))){ // reduce the window
+            while(set.contains(s.charAt(r))){ // set here contains previous loop character
                 set.remove(s.charAt(l));
                 l++;
             }

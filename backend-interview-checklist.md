@@ -2,61 +2,45 @@
 
 A comprehensive interview-preparation map for experienced Java/Spring backend roles.
 
-> **How to use this:** Treat this as a reference/checklist, not a syllabus that must be completed cover-to-cover. 
-Prioritize Tier 1, use books/documentation to fill gaps exposed by practice, and progressively work through the 
-lower-priority areas.
+# Suggested High-Level Order
 
----
+## Phase 1 — Interview Core
 
-## Priority Overview
+1. [ ] Java
+2. [ ] DSA
+3. [ ] SQL
+4. [ ] Spring Boot
+5. [ ] REST / HTTP
+6. [ ] JPA / Hibernate
 
-### Tier 1 — Absolutely Master ⭐⭐⭐⭐⭐
+## Phase 2 — Backend Depth
 
-- DSA / Problem Solving
-- Java
-- Java Concurrency
-- Spring Boot
-- REST / HTTP
-- JPA / Hibernate
-- SQL
-- Database Transactions
-- System Design
-- Microservices
-- Security
-- Resume / Project Deep Dive
-- Behavioral Interviews
+7. [ ] Java Concurrency
+8. [ ] DBMS
+9. [ ] Testing
+10. [ ] Security
+11. [ ] Redis / Caching
+12. [ ] Kafka / Messaging
+13. [ ] Docker
 
-### Tier 2 — Strong Working Knowledge ⭐⭐⭐⭐
+## Phase 3 — Architecture
 
-- JVM
-- Database Internals
-- Networking
-- Testing
-- Docker
-- Git
-- Kafka / Messaging
-- Redis / Caching
-- Observability
+14. [ ] System Design
+15. [ ] Microservices
+16. [ ] Networking
+17. [ ] Observability
+18. [ ] Cloud
+19. [ ] Kubernetes
 
-### Tier 3 — Interview-Level Familiarity ⭐⭐⭐
+## Phase 4 — Interview Execution
 
-- Operating Systems
-- Kubernetes
-- Cloud
-- Linux
-- Maven / Gradle
+20. [ ] Resume deep dive
+21. [ ] Behavioral questions
+22. [ ] DSA mock interviews
+23. [ ] Backend mock interviews
+24. [ ] System design mock interviews
+25. [ ] Company-specific preparation
 
-### Tier 4 — Lower Priority for Immediate Interview Preparation ⭐⭐
-
-- Compiler Design
-- Computer Graphics
-- Assembly
-- Advanced Mathematics
-- Deep Kernel Internals
-- Advanced Distributed Consensus
-- Advanced Algorithms Beyond Typical Interview Requirements
-
----
 
 # 1. DSA / Problem Solving ⭐⭐⭐⭐⭐
 
@@ -1192,57 +1176,15 @@ The goal is not to eliminate every possible knowledge gap before interviewing.
 
 The goal is to become progressively better at:
 
-- [ ] Solving problems
-- [ ] Writing correct code
-- [ ] Explaining your reasoning
-- [ ] Building backend systems
-- [ ] Designing systems
-- [ ] Debugging production problems
-- [ ] Communicating technical decisions
-- [ ] Defending your experience
+- Solving problems
+- Writing correct code
+- Explaining your reasoning
+- Building backend systems
+- Designing systems
+- Debugging production problems
+- Communicating technical decisions
+- Defending your experience
 
----
-
-# Suggested High-Level Order
-
-## Phase 1 — Interview Core
-
-1. [ ] Java
-2. [ ] DSA
-3. [ ] SQL
-4. [ ] Spring Boot
-5. [ ] REST / HTTP
-6. [ ] JPA / Hibernate
-
-## Phase 2 — Backend Depth
-
-7. [ ] Java Concurrency
-8. [ ] DBMS
-9. [ ] Testing
-10. [ ] Security
-11. [ ] Redis / Caching
-12. [ ] Kafka / Messaging
-13. [ ] Docker
-
-## Phase 3 — Architecture
-
-14. [ ] System Design
-15. [ ] Microservices
-16. [ ] Networking
-17. [ ] Observability
-18. [ ] Cloud
-19. [ ] Kubernetes
-
-## Phase 4 — Interview Execution
-
-20. [ ] Resume deep dive
-21. [ ] Behavioral questions
-22. [ ] DSA mock interviews
-23. [ ] Backend mock interviews
-24. [ ] System design mock interviews
-25. [ ] Company-specific preparation
-
----
 
 # Final Rule
 
