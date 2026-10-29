@@ -201,8 +201,11 @@ Also practice implementing:
 - [x] 16. Rotate Array — LC 189
 - [x] 17. Majority Element — LC 169
 - [x] 18. Maximum Subarray Sum — LC 53
+    Used monotonic queue, was challenging.
 
 ### Sliding Window
+
+Needs more efforts.
 
 - [x] 19. Maximum Average Subarray I — LC 643
 - [x] 20. Longest Substring Without Repeating Characters — LC 3
@@ -211,7 +214,7 @@ Also practice implementing:
 - [x] 23. Find All Anagrams in a String — LC 438
 - [x] 24. Minimum Size Subarray Sum — LC 209
 - [x] 25. Minimum Window Substring — LC 76
-- [ ] 26. Sliding Window Maximum — LC 239
+- [x] 26. Sliding Window Maximum — LC 239
 
 ### Hashing
 
