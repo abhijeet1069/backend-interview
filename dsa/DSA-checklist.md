@@ -4,14 +4,14 @@
 
 ### Foundations
 
-- [ ] Big-O
-- [ ] Big-Theta
-- [ ] Big-Omega
-- [ ] Time complexity
-- [ ] Space complexity
-- [ ] Recursion
-- [ ] Iteration vs recursion
-- [ ] Call stack
+- [x] Big-O
+- [x] Big-Theta
+- [x] Big-Omega
+- [x] Time complexity
+- [x] Space complexity
+- [x] Recursion
+- [x] Iteration vs recursion
+- [x] Call stack
 - [ ] Math / Number theory
 - [ ] Bit manipulation
 
@@ -22,7 +22,7 @@
 - [ ] Difference arrays
 - [x] Kadane's algorithm
 - [x] Two pointers
-- [ ] Sliding window
+- [x] Sliding window
 - [ ] Sorting
 - [x] String manipulation
 - [x] Frequency counting
@@ -36,38 +36,6 @@
 - [ ] Hash collisions
 - [ ] Custom hashing
 - [ ] `equals()` + `hashCode()`
-
-### Math / Number Theory
-
-- [ ] 207. Fizz Buzz — LC 412
-- [ ] 208. Palindrome Number — LC 9
-- [ ] 209. Reverse Integer — LC 7
-- [ ] 210. Happy Number — LC 202
-- [ ] 211. Pow(x, n) — LC 50
-- [ ] 212. Sqrt(x) — LC 69
-- [ ] 213. Count Primes — LC 204
-- [ ] 214. Excel Sheet Column Number — LC 171
-- [ ] 215. Integer to Roman — LC 12
-- [ ] 216. Roman to Integer — LC 13
-
-Also practice implementing:
-- [ ] GCD / Euclid's algorithm
-- [ ] LCM
-- [ ] Sieve of Eratosthenes
-- [ ] Fast exponentiation
-- [ ] Modular arithmetic
-- [ ] Prime factorization
-
-### Bit Manipulation
-
-- [ ] 188. Single Number — LC 136
-- [ ] 189. Number of 1 Bits — LC 191
-- [ ] 190. Counting Bits — LC 338
-- [ ] 191. Reverse Bits — LC 190
-- [ ] 192. Missing Number — LC 268
-- [ ] 193. Sum of Two Integers — LC 371
-- [ ] 194. Power of Two — LC 231
-- [ ] 195. Subsets — LC 78
 
 ### Linked Lists
 
@@ -183,38 +151,72 @@ Also practice implementing:
 
 ### Arrays & Two Pointers
 
-- [x] 1. Two Sum — LC 1
-- [x] 2. Best Time to Buy and Sell Stock — LC 121
-- [x] 3. Contains Duplicate — LC 217
-- [x] 4. Product of Array Except Self — LC 238
-- [x] 5. Maximum Subarray — LC 53
-- [x] 6. Maximum Product Subarray — LC 152
-- [x] 7. Merge Sorted Array — LC 88
-- [x] 8. Move Zeroes — LC 283
-- [x] 9. Remove Duplicates from Sorted Array — LC 26
-- [x] 10. Remove Element — LC 27
-- [x] 11. Squares of a Sorted Array — LC 977
-- [x] 12. 3Sum — LC 15
-- [x] 13. Container With Most Water — LC 11
-- [x] 14. Trapping Rain Water — LC 42
-- [x] 15. Sort Colors — LC 75
-- [x] 16. Rotate Array — LC 189
-- [x] 17. Majority Element — LC 169
-- [x] 18. Maximum Subarray Sum — LC 53
+- [x] LC 1: Two Sum
+- [x] LC 121: Best Time to Buy and Sell Stock
+- [x] LC 217: Contains Duplicate
+- [x] LC 238: Product of Array Except Self
+- [x] LC 53: Maximum Subarray
+- [x] LC 152: Maximum Product Subarray
+- [x] LC 88: Merge Sorted Array
+- [x] LC 283: Move Zeroes
+- [x] LC 26: Remove Duplicates from Sorted Array
+- [x] LC 27: Remove Element
+- [x] LC 977: Squares of a Sorted Array
+- [x] LC 15: 3Sum
+- [x] LC 11: Container With Most Water
+- [x] LC 42: Trapping Rain Water
+- [x] LC 75: Sort Colors
+- [x] LC 189: Rotate Array
+- [x] LC 169: Majority Element
+- [ ] LC 1109: Corporate Flight Bookings 
+- [ ] LC 1094: Car Pooling
+- [ ] LC 2381: Shifting Letters II 
     
 
 ### Sliding Window
 
 Needs more efforts.
 
-- [x] 19. Maximum Average Subarray I — LC 643
-- [x] 20. Longest Substring Without Repeating Characters — LC 3
-- [x] 21. Longest Repeating Character Replacement — LC 424
-- [x] 22. Permutation in String — LC 567
-- [x] 23. Find All Anagrams in a String — LC 438
-- [x] 24. Minimum Size Subarray Sum — LC 209
-- [x] 25. Minimum Window Substring — LC 76
-- [x] 26. Sliding Window Maximum — LC 239 : Used monotonic queue, was challenging.
+- [x] LC 643: Maximum Average Subarray I
+- [x] LC 3:  Longest Substring Without Repeating Characters
+- [x] LC 424:  Longest Repeating Character Replacement
+- [x] LC 567: Permutation in String
+- [x] LC 438:  Find All Anagrams in a String
+- [x] LC 209: Minimum Size Subarray Sum
+- [x] LC 76: Minimum Window Substring
+- [x] LC 239: Sliding Window Maximum — Used monotonic queue, was challenging.
+
+### Math / Number Theory
+
+- [ ] LC 412: Fizz Buzz
+- [ ] LC 9: Palindrome Number
+- [ ] LC 7: Reverse Integer
+- [ ] LC 202: Happy Number 
+- [ ] LC 50: Pow(x, n)
+- [ ] LC 69: Sqrt(x)
+- [ ] LC 204: Count Primes
+- [ ] LC 171: Excel Sheet Column Number
+- [ ] LC 12: Integer to Roman
+- [ ] LC 13: Roman to Integer
+
+Also practice implementing:
+- [ ] GCD / Euclid's algorithm
+- [ ] LCM
+- [ ] Sieve of Eratosthenes
+- [ ] Fast exponentiation
+- [ ] Modular arithmetic
+- [ ] Prime factorization
+
+### Bit Manipulation
+
+- [ ] LC 136: Single Number
+- [ ] LC 191: Number of 1 Bits
+- [ ] LC 338: Counting Bits
+- [ ] LC 190: Reverse Bits
+- [ ] LC 268: Missing Number
+- [ ] LC 371: Sum of Two Integers
+- [ ] LC 231: Power of Two
+- [ ] LC 78: Subsets
 
 ### Hashing
 
