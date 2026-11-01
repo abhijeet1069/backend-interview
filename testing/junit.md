@@ -4,33 +4,6 @@ Unit testing is a type of software testing where the smallest isolated testable
 parts of an application - typically functions or classes are tested independently
 to verify they work exactly as expected.
 
-## Junit 5 dependecies
-
-```xml
-<dependencies>
-    <dependency>
-      <groupId>org.junit.jupiter</groupId>
-      <artifactId>junit-jupiter-api</artifactId>
-      <version>5.6.0</version>
-      <scope>test</scope>
-    </dependency>
-
-    <dependency>
-      <groupId>org.junit.jupiter</groupId>
-      <artifactId>junit-jupiter-engine</artifactId>
-      <version>5.6.0</version>
-      <scope>test</scope>
-    </dependency>
-
-    <dependency>
-      <groupId>org.junit.jupiter</groupId>
-      <artifactId>junit-jupiter-params</artifactId>
-      <version>5.6.0</version>
-      <scope>test</scope>
-    </dependency>
-</dependencies>
-```
-
 ## Assertions
 
 ```java
@@ -111,4 +84,31 @@ to verify they work exactly as expected.
     void testSquareFromFile(int a, int expectedSum) {
         assertEquals(expectedSum, a * a);
     }
+```
+
+## Junit 5 dependencies
+
+```xml
+<dependencies>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-api</artifactId>
+      <version>5.6.0</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-engine</artifactId>
+      <version>5.6.0</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-params</artifactId>
+      <version>5.6.0</version>
+      <scope>test</scope>
+    </dependency>
+</dependencies>
 ```

@@ -1,152 +1,5 @@
 # Data Structures and Algorithms ⭐⭐⭐⭐⭐
 
-## Checklist
-
-### Foundations
-
-- [x] Big-O
-- [x] Big-Theta
-- [x] Big-Omega
-- [x] Time complexity
-- [x] Space complexity
-- [x] Recursion
-- [x] Iteration vs recursion
-- [x] Call stack
-- [ ] Math / Number theory
-- [ ] Bit manipulation
-
-### Arrays & Strings
-
-- [x] Array traversal
-- [x] Prefix sums
-- [ ] Difference arrays
-- [x] Kadane's algorithm
-- [x] Two pointers
-- [x] Sliding window
-- [ ] Sorting
-- [x] String manipulation
-- [x] Frequency counting
-- [ ] Hashing
-
-### Hashing
-
-- [ ] HashMap
-- [ ] HashSet
-- [ ] Frequency maps
-- [ ] Hash collisions
-- [ ] Custom hashing
-- [ ] `equals()` + `hashCode()`
-
-### Linked Lists
-
-- [ ] Singly linked list
-- [ ] Doubly linked list
-- [ ] Fast/slow pointers
-- [ ] Reversal
-- [ ] Cycle detection
-- [ ] Merging
-- [ ] Intersection
-
-### Stack / Queue
-
-- [ ] Stack
-- [ ] Queue
-- [ ] Deque
-- [ ] Monotonic stack
-- [ ] Monotonic queue
-- [ ] Expression problems
-
-### Binary Search
-
-- [ ] Standard binary search
-- [ ] First/last occurrence
-- [ ] Search on answer
-- [ ] Rotated arrays
-- [ ] Binary search over ranges
-
-### Trees
-
-- [ ] Binary trees
-- [ ] BST
-- [ ] DFS
-- [ ] BFS
-- [ ] Preorder
-- [ ] Inorder
-- [ ] Postorder
-- [ ] Level-order
-- [ ] Tree height/depth
-- [ ] Path problems
-- [ ] Lowest common ancestor
-- [ ] Balanced trees
-- [ ] Serialization/deserialization
-
-### Heap / Priority Queue
-
-- [ ] Min heap
-- [ ] Max heap
-- [ ] PriorityQueue
-- [ ] Top-K
-- [ ] K-way merge
-- [ ] Median problems
-
-### Backtracking
-
-- [ ] Subsets
-- [ ] Permutations
-- [ ] Combinations
-- [ ] N-Queens
-- [ ] Constraint problems
-- [ ] Decision trees
-- [ ] Pruning
-
-### Graphs
-
-- [ ] Graph representation
-- [ ] BFS
-- [ ] DFS
-- [ ] Connected components
-- [ ] Cycle detection
-- [ ] Topological sorting
-- [ ] DAG
-- [ ] Shortest path
-- [ ] Dijkstra
-- [ ] Bellman-Ford
-- [ ] Union-Find / DSU
-- [ ] Minimum spanning tree
-- [ ] Kruskal
-- [ ] Prim
-- [ ] Bipartite graphs
-
-### Greedy
-
-- [ ] Interval scheduling
-- [ ] Activity selection
-- [ ] Sorting + greedy
-- [ ] Exchange arguments
-- [ ] Heap-based greedy
-
-### Dynamic Programming
-
-- [ ] 1D DP
-- [ ] 2D DP
-- [ ] Knapsack
-- [ ] Subsequence problems
-- [ ] Grid DP
-- [ ] Partition problems
-- [ ] State definition
-- [ ] Transition
-- [ ] Memoization
-- [ ] Tabulation
-- [ ] Space optimization
-
-### Advanced / Lower Priority
-
-- [ ] Trie
-- [ ] Segment tree
-- [ ] Fenwick tree
-- [ ] Bitmask DP
-- [ ] Advanced graph algorithms
-
 ## Leetcode Problems
 
 ### Arrays & Two Pointers
@@ -478,6 +331,153 @@ Understand:
 - Stability
 - In-place vs out-of-place
 - Best/average/worst case
+
+## Checklist
+
+### Foundations
+
+- [x] Big-O
+- [x] Big-Theta
+- [x] Big-Omega
+- [x] Time complexity
+- [x] Space complexity
+- [x] Recursion
+- [x] Iteration vs recursion
+- [x] Call stack
+- [ ] Math / Number theory
+- [ ] Bit manipulation
+
+### Arrays & Strings
+
+- [x] Array traversal
+- [x] Prefix sums
+- [ ] Difference arrays
+- [x] Kadane's algorithm
+- [x] Two pointers
+- [x] Sliding window
+- [ ] Sorting
+- [x] String manipulation
+- [x] Frequency counting
+- [ ] Hashing
+
+### Hashing
+
+- [ ] HashMap
+- [ ] HashSet
+- [ ] Frequency maps
+- [ ] Hash collisions
+- [ ] Custom hashing
+- [ ] `equals()` + `hashCode()`
+
+### Linked Lists
+
+- [ ] Singly linked list
+- [ ] Doubly linked list
+- [ ] Fast/slow pointers
+- [ ] Reversal
+- [ ] Cycle detection
+- [ ] Merging
+- [ ] Intersection
+
+### Stack / Queue
+
+- [ ] Stack
+- [ ] Queue
+- [ ] Deque
+- [ ] Monotonic stack
+- [ ] Monotonic queue
+- [ ] Expression problems
+
+### Binary Search
+
+- [ ] Standard binary search
+- [ ] First/last occurrence
+- [ ] Search on answer
+- [ ] Rotated arrays
+- [ ] Binary search over ranges
+
+### Trees
+
+- [ ] Binary trees
+- [ ] BST
+- [ ] DFS
+- [ ] BFS
+- [ ] Preorder
+- [ ] Inorder
+- [ ] Postorder
+- [ ] Level-order
+- [ ] Tree height/depth
+- [ ] Path problems
+- [ ] Lowest common ancestor
+- [ ] Balanced trees
+- [ ] Serialization/deserialization
+
+### Heap / Priority Queue
+
+- [ ] Min heap
+- [ ] Max heap
+- [ ] PriorityQueue
+- [ ] Top-K
+- [ ] K-way merge
+- [ ] Median problems
+
+### Backtracking
+
+- [ ] Subsets
+- [ ] Permutations
+- [ ] Combinations
+- [ ] N-Queens
+- [ ] Constraint problems
+- [ ] Decision trees
+- [ ] Pruning
+
+### Graphs
+
+- [ ] Graph representation
+- [ ] BFS
+- [ ] DFS
+- [ ] Connected components
+- [ ] Cycle detection
+- [ ] Topological sorting
+- [ ] DAG
+- [ ] Shortest path
+- [ ] Dijkstra
+- [ ] Bellman-Ford
+- [ ] Union-Find / DSU
+- [ ] Minimum spanning tree
+- [ ] Kruskal
+- [ ] Prim
+- [ ] Bipartite graphs
+
+### Greedy
+
+- [ ] Interval scheduling
+- [ ] Activity selection
+- [ ] Sorting + greedy
+- [ ] Exchange arguments
+- [ ] Heap-based greedy
+
+### Dynamic Programming
+
+- [ ] 1D DP
+- [ ] 2D DP
+- [ ] Knapsack
+- [ ] Subsequence problems
+- [ ] Grid DP
+- [ ] Partition problems
+- [ ] State definition
+- [ ] Transition
+- [ ] Memoization
+- [ ] Tabulation
+- [ ] Space optimization
+
+### Advanced / Lower Priority
+
+- [ ] Trie
+- [ ] Segment tree
+- [ ] Fenwick tree
+- [ ] Bitmask DP
+- [ ] Advanced graph algorithms
 
 ## How to Practice Each Problem
 

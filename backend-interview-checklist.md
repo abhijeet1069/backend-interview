@@ -199,12 +199,12 @@ A comprehensive interview-preparation map for experienced Java/Spring backend ro
 
 ### Spring Core
 
-- [ ] IoC
-- [ ] Dependency Injection
-- [ ] ApplicationContext
-- [ ] BeanFactory
-- [ ] Beans
-- [ ] Bean lifecycle
+- [x] IoC
+- [x] Dependency Injection
+- [x] ApplicationContext
+- [x] BeanFactory
+- [x] Beans
+- [x] Bean lifecycle
 - [ ] Component scanning
 - [ ] `@Component`
 - [ ] `@Service`
@@ -648,16 +648,16 @@ Spring Boot
 - [x] JUnit 5
 - [x] Assertions
 - [x] Parameterized tests
-- [ ] Mockito
-- [ ] Mock
-- [ ] Spy
-- [ ] Stub
-- [ ] Test isolation
+- [x] Mockito
+- [x] Mock
+- [x] Spy
+- [x] Stub
+- [x] Test isolation
 
 ### Integration Testing
 
-- [ ] Spring Boot Test
-- [ ] Testcontainers
+- [x] Spring Boot Test
+- [x] Testcontainers
 - [ ] Database integration tests
 - [ ] REST integration tests
 
