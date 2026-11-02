@@ -41,9 +41,9 @@ Needs more efforts.
 
 ### Math / Number Theory
 
-- [ ] LC 412: Fizz Buzz
-- [ ] LC 9: Palindrome Number
-- [ ] LC 7: Reverse Integer
+- [x] LC 412: Fizz Buzz
+- [x] LC 9: Palindrome Number
+- [x] LC 7: Reverse Integer
 - [ ] LC 202: Happy Number 
 - [ ] LC 50: Pow(x, n)
 - [ ] LC 69: Sqrt(x)
