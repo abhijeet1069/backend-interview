@@ -160,7 +160,8 @@ public int maxSubArray(int[] nums) {
 
 ```java
 /**
- * Given an integer array nums, find a subarray that has the largest product, and return the product.
+ * Given an integer array nums, find a subarray that has the largest product, 
+ * and return the product.
  * 
  * Input: nums = [2,3,-2,4]
    Output: 6
@@ -190,8 +191,9 @@ public int maxProduct(int[] nums) {
 
 ```java
 /**
-    * You are given two integer arrays nums1 and nums2, sorted in non-decreasing order, and two integers
-     * m and n, representing the number of elements in nums1 and nums2 respectively.
+    * You are given two integer arrays nums1 and nums2, sorted in non-decreasing order, 
+    * and two integers m and n, representing the number of elements in nums1 and nums2 
+    * respectively.
      *
      * The final sorted array should be stored inside nums1[]
      * 
@@ -282,9 +284,9 @@ public int removeDuplicates(int[] nums) {
 
 ```java
 /**
- * Given an integer array nums and an integer val, remove all occurrences of val in nums in-place. 
- * The order of the elements may be changed. Then return the number of elements in nums which are
- *  not equal to val.
+ * Given an integer array nums and an integer val, remove all occurrences of val in 
+ * nums in-place. The order of the elements may be changed. Then return the number of 
+ * elements in nums which are not equal to val.
  * 
  * Input: nums = [3,2,2,3], val = 3
    Output: 2, nums = [2,2,_,_]
@@ -307,8 +309,8 @@ public int removeElement(int[] nums, int val) {
 
 ```java
 /**
- * Given an integer array nums sorted in non-decreasing order, return an array of the squares of 
- * each number sorted in non-decreasing order.
+ * Given an integer array nums sorted in non-decreasing order, return an array of 
+ * the squares of each number sorted in non-decreasing order.
  * 
  * Input: nums = [-4,-1,0,3,10]
 Output: [0,1,9,16,100]
