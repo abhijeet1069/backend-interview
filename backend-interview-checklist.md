@@ -8,15 +8,15 @@ A comprehensive interview-preparation map for experienced Java/Spring backend ro
 
 1. [ ] Java
 2. [ ] DSA
-3. [ ] SQL
+3. [ ] SQL - P1
 4. [ ] Spring Boot
 5. [ ] REST / HTTP
 6. [ ] JPA / Hibernate
 
 ### Phase 2 — Backend Depth
 
-7. [ ] Java Concurrency
-8. [ ] DBMS
+7. [ ] Java Concurrency - P3
+8. [ ] DBMS - P2
 9. [ ] Testing
 10. [ ] Security
 11. [ ] Redis / Caching
@@ -344,25 +344,25 @@ A comprehensive interview-preparation map for experienced Java/Spring backend ro
 
 ### SQL Fundamentals
 
-- [ ] SELECT
-- [ ] INSERT
-- [ ] UPDATE
-- [ ] DELETE
-- [ ] WHERE
-- [ ] GROUP BY
-- [ ] HAVING
-- [ ] ORDER BY
-- [ ] DISTINCT
-- [ ] LIMIT / OFFSET
+- [x] SELECT
+- [x] INSERT
+- [x] UPDATE
+- [x] DELETE
+- [x] WHERE
+- [x] GROUP BY
+- [x] HAVING
+- [x] ORDER BY
+- [x] DISTINCT
+- [x] LIMIT / OFFSET
 
 ### Joins
 
-- [ ] INNER JOIN
-- [ ] LEFT JOIN
-- [ ] RIGHT JOIN
-- [ ] FULL JOIN
-- [ ] Self join
-- [ ] Cross join
+- [x] INNER JOIN
+- [x] LEFT JOIN
+- [x] RIGHT JOIN
+- [x] FULL JOIN
+- [x] Self join
+- [x] Cross join
 
 ### Advanced SQL
 
