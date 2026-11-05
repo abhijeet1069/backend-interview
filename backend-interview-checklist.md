@@ -366,8 +366,8 @@ A comprehensive interview-preparation map for experienced Java/Spring backend ro
 
 ### Advanced SQL
 
-- [ ] Subqueries
-- [ ] Correlated subqueries
+- [x] Subqueries
+- [x] Correlated subqueries
 - [ ] CTE
 - [ ] Recursive CTE
 - [ ] Window functions
