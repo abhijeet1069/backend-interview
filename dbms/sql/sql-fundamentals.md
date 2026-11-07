@@ -123,6 +123,7 @@ WHERE department IS NULL;
 
 Used to group rows that have the same values in specified columns.
 
+> Every non-aggregated column in SELECT must be grouped or functionally dependent on the grouped columns
 
 Aggregate Function:
 
@@ -162,6 +163,14 @@ FROM employees
 WHERE salary > 30000
 GROUP BY department
 HAVING AVG(salary) > 50000;
+
+select name from Employee
+where id in (
+    select managerId from Employee
+    where managerId is not null
+    group by managerId
+    having count(*) >= 5
+)
 ```
 
 ## ORDER BY
@@ -211,4 +220,13 @@ SELECT *
 FROM employees
 ORDER BY id
 LIMIT 10 OFFSET 20;
+```
+
+## IS NULL
+
+```sql
+select name, bonus from
+Employee e left join Bonus b
+on e.empId = b.empId
+where bonus < 1000 or bonus is null;
 ```

@@ -92,3 +92,33 @@ SELECT AGE(
     DATE '1996-06-23'
 );
 ```
+
+## Calculate yesterday
+
+```sql
+-- find all dates' id with higher temperatures compared to its previous calendar dates (yesterday).
+
+Weather table:
++----+------------+-------------+
+| id | recordDate | temperature |
++----+------------+-------------+
+| 1  | 2015-01-01 | 10          |
+| 2  | 2015-01-02 | 25          |
+| 3  | 2015-01-03 | 20          |
+| 4  | 2015-01-04 | 30          |
++----+------------+-------------+
+Output: 
++----+
+| id |
++----+
+| 2  |
+| 4  |
++----+
+
+select today.id from
+weather today
+inner join
+weather yesterday
+on today.recordDate = yesterday.recordDate + INTERVAL '1 day' 
+where today.temperature > yesterday.temperature
+```
