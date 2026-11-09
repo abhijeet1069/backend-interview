@@ -230,3 +230,25 @@ Employee e left join Bonus b
 on e.empId = b.empId
 where bonus < 1000 or bonus is null;
 ```
+
+## DDL
+
+### Types
+
+* char(n): A fixed-length character string with user-specified length n
+* varchar(n): A variable-length character string with user-specified maximum length n
+* int: An integer (a finite subset of the integers that is machine dependent).
+* smallint: A small integer (a machine-dependent subset of the integer type).
+* numeric(p, d): A fixed-point number with user-specified precision. 
+* real, double precision: Floating-point and double-precision floating-point numbers with machine-dependent precision.
+* float(n): A floating-point number with precision of at least n digits.
+
+### Create table
+
+```sql
+create table department
+    (dept name varchar (20),
+    building varchar (15),
+    budget numeric (12,2),
+    primary key (dept name));
+```

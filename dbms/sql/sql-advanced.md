@@ -135,7 +135,8 @@ Messages as(
     GROUP BY s.user_id
 )
 
-SELECT m.user_id, COALESCE(ROUND(CAST(c.confirmed_count AS NUMERIC)/CAST(m.messages_count AS NUMERIC), 2), 0) AS confirmation_rate
+SELECT m.user_id, COALESCE(ROUND(CAST(c.confirmed_count AS NUMERIC)/CAST(m.messages_count AS NUMERIC), 2), 0) 
+AS confirmation_rate
 FROM Messages as m
 LEFT JOIN Confirmed_times as c
 ON m.user_id = c.user_id
@@ -190,6 +191,10 @@ FROM EmployeeHierarchy;
 
 The SQL CASE expression adds conditional, if-then-else logic to your queries
 
+Common Usescases
+
+### Conditional aggregation
+
 ```sql
 -- For each department, how many employees are there in total, how many are female, and how many are male?
 SELECT 
@@ -201,11 +206,72 @@ FROM employees
 GROUP BY department_id;
 ```
 
+### Conditional Sorting
+
+```sql
+-- Sort US customers by city, international customers by country
+SELECT customer_name, country, city 
+FROM customers
+ORDER BY 
+    CASE WHEN country = 'USA' THEN city ELSE country END;
+```
+
+### Conditional Update
+
+```sql
+UPDATE products
+SET status = CASE 
+    WHEN stock_quantity = 0 THEN 'Out of Stock'
+    WHEN stock_quantity <= 10 THEN 'Low Stock'
+    ELSE 'In Stock'
+END;
+
+```
+
+
 ## COALESCE
 
 COALESCE() is a SQL function that returns the first non-NULL value from a list of expressions.
 
+Common usescases:
+
+### Replacing nulls with default values
+
 ```sql
--- 10
-SELECT COALESCE(NULL, NULL, 10, 20);
+SELECT 
+    product_name,
+    price,
+    COALESCE(description, 'No description available') AS product_description
+FROM products;
+```
+
+### Preventing math errors in calculations
+
+```sql
+-- Without COALESCE, if bonus is NULL, total_pay becomes NULL
+SELECT 
+    employee_name,
+    salary + COALESCE(bonus, 0) AS total_pay
+FROM employees;
+```
+
+### Creating fallback
+
+```sql
+-- Pulls mobile phone first; if missing, pulls home phone; if missing, pulls email
+SELECT 
+    customer_name,
+    COALESCE(mobile_phone, home_phone, email, 'No contact info') AS primary_contact
+FROM customers;
+```
+
+### Handling aggregations
+
+```sql
+-- COALESCE ensures your application receives a clean 0 instead of a blank space.
+SELECT 
+    COALESCE(SUM(order_amount), 0) AS total_sales_today
+FROM orders
+WHERE order_date = CURRENT_DATE;
+
 ```
