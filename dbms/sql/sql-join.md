@@ -48,15 +48,45 @@ values (101,1),
        (104,4);
 ```
 
+## Cross join
+
+```sql
+-- Both are equivalent. Both produce the Cartesian product.
+-- also both require where clause to filter, don't have ON 
+SELECT *
+FROM A, B;
+
+SELECT *
+FROM A
+CROSS JOIN B;
+```
+
 ## Inner join
 
 ```sql
-- gives rows that exist in both tables
+-- gives rows that exist in both tables
 
 SELECT *
 FROM Customers c
 INNER JOIN Orders o
     ON c.customer_id = o.customer_id;
+
+-- both statements are equivalent
+SELECT *
+FROM Customers c
+CROSS JOIN Orders o
+    WHERE c.customer_id = o.customer_id;
+
+-- joins 3 tables takes, teaches, instructor with takes and teaches having multiple foreign keys
+select ta.id from
+takes ta inner join teaches te
+on ta.course_id=te.course_id 
+and ta.sec_id=te.sec_id 
+and ta.semester=te.semester 
+and ta.year=te.year
+inner join instructor i
+on te.id=i.id
+where i.name='Einstein'
 ```
 
 | customer_id   |     name        | order_id | customer_id

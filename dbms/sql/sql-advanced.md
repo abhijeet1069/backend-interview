@@ -15,11 +15,7 @@ WHERE salary > (
   SELECT AVG(salary)
   FROM employees
 );
-```
 
-### Subquery with IN
-
-```sql
 -- Find employees who work in a department located in New York
 SELECT name
 FROM employees
@@ -28,7 +24,16 @@ WHERE department_id IN (
   FROM departments
   WHERE location = 'New York'
 );
+
+-- Find instructor with highest salary
+select name,salary from instructor
+where salary = (select max(salary) from instructor);
+
 ```
+
+### Subquery with IN
+
+
 
 ### Subquery in FROM
 

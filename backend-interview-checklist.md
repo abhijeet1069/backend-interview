@@ -368,8 +368,8 @@ A comprehensive interview-preparation map for experienced Java/Spring backend ro
 
 - [x] Subqueries
 - [x] Correlated subqueries
-- [ ] CTE
-- [ ] Recursive CTE
+- [x] CTE
+- [x] Recursive CTE
 - [ ] Window functions
 - [ ] `ROW_NUMBER`
 - [ ] `RANK`
