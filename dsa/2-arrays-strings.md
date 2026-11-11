@@ -446,48 +446,36 @@ Input: height = [0,1,0,2,1,0,1,3,2,1,2,1]
 Output: 6
 Explanation: The above elevation map (black section) is represented by array [0,1,0,2,1,0,1,3,2,1,2,1]. 
 In this case, 6 units of rain water (blue section) are being trapped.
+
+Explanation:
+Here, we used the prefix suffix approach.
 */
 
-// For every position:
-
-// 1. Find the tallest wall to its left.
-// 2. Find the tallest wall to its right.
-// 3. Calculate how much water that position traps.
-// 4. Add it to the total.
 public int trap(int[] height) {
-    int[] l = new int[height.length];
-    int max = height[0];
-    for(int i = 1; i < height.length; i++){
-        if(max > height[i])
-            l[i] = max;
-        else
-             max = height[i];
+    
+    // build prefix array including the current element
+    int[] lmax = new int[height.length];
+    lmax[0] = height[0];
+    for(int i = 1; i < height.length; i++)
+        lmax[i] = Math.max(lmax[i-1],height[i]);
+
+    // build suffix array including the current element
+    int[] rmax = new int[height.length];
+    rmax[height.length-1] = height[height.length-1];
+    for(int i = height.length-2; i >= 0; i--)
+        rmax[i] = Math.max(rmax[i-1],height[i]);
+
+    int[] sum = 0;
+    for(int i = 0;i < height.length; i++){
+        // water at current level
+        int water = Math.min(lmax[i],rmax[i]) - height[i];
+        
+        //ignore negative values
+        if(water < 0)
+            water = 0;
+
+        sum += water;
         }
-
-    int[] r = new int[height.length];
-    max = height[height.length-1];
-    for(int i = height.length-2; i >= 0; i--){
-        if(max > height[i])
-            r[i] = max;
-        else
-            max = height[i];
-        }
-
-        int[] res = new int[height.length];
-        for(int i = 0;i < height.length; i++){
-            //The water level at any position is determined by the shorter of the tallest 
-            // walls on its left and right.
-            int water = Math.min(l[i],r[i])-height[i];
-            if(water < 0)
-                res[i] = 0;
-            else
-                res[i] = water;
-        }
-
-        int sum = 0;
-        for(int x : res)
-            sum += x;
-
         return sum;
     }
 ```
@@ -569,13 +557,14 @@ rotate 3 steps to the right: [5,6,7,1,2,3,4]
 ```java
 /**
  * Given an array nums of size n, return the majority element.
- * You may assume that the majority element always exists in the array.
+ * You may assume that the majority element always exists in the array. 
+ * //this is primary condition for moore voting algorithm
  * 
  * Input: nums = [3,2,3]
 Output: 3
  * 
 */
-//uses boyre-moore voting algorithm : works on cancellation
+//uses Boyer Moore voting algorithm : works on cancellation
 //this could be solved using a hashmap, but it would store much unnecessary information
 public int majorityElement(int[] nums) {
     int count = 0; 
