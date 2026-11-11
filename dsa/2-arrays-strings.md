@@ -544,13 +544,13 @@ rotate 3 steps to the right: [5,6,7,1,2,3,4]
     public void rotate(int[] nums, int k) {
         int len = nums.length;
 
-        if (len == 0) return;
+        if (len == 0) return; //prevents arithmetic exception
 
-        k %= len;
+        k %= len; //normalise k -> k%n
 
-        reverse(nums, 0, len - 1);
-        reverse(nums, 0, k - 1);
-        reverse(nums, k, len - 1);
+        reverse(nums, 0, len - 1); // reverse entire array
+        reverse(nums, 0, k - 1); // reverse first k elements
+        reverse(nums, k, len - 1); // reverse last n-k elements
     }
 
     private void reverse(int[] nums, int left, int right) {
