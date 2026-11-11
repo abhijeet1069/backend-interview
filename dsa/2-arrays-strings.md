@@ -422,13 +422,13 @@ public int maxArea(int[] height) {
     int maxwater = 0;
     while(l < r){
         int water = Math.min(height[l], height[r])*(r-l);
-        maxwater = Math.max(maxWater, water);
+        maxwater = Math.max(maxwater, water);
         // move the smaller height, as it forms the smaller area
         // so at each move you are choosing the higher area
         if(height[l] <= height[r])
             l++;
         else
-            r++;
+            r--;
     }
     return maxwater;
 }
