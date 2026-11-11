@@ -418,21 +418,20 @@ the max area of water (blue section) the container can contain is 49.
 */
 
 public int maxArea(int[] height) {
-    int l = 0, r = height.length-1, max_area = -1, curr_area = 0;
+    int l = 0, r = height.length-1;
+    int maxwater = 0;
     while(l < r){
-        if(height[l] <= height[r]){
-            curr_area = (r-l)*height[l];
+        int water = Math.min(height[l], height[r])*(r-l);
+        maxwater = Math.max(maxWater, water);
+        // move the smaller height, as it forms the smaller area
+        // so at each move you are choosing the higher area
+        if(height[l] <= height[r])
             l++;
-        }
-        else{
-            curr_area = (r-l)*height[r];
-            r--;
-        }
-        if(max_area < curr_area)
-            max_area = curr_area;
-        }
-        return max_area;
+        else
+            r++;
     }
+    return maxwater;
+}
 ```
 
 ## 14. Trapping Rain Water
