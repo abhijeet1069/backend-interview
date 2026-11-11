@@ -357,6 +357,10 @@ nums[1] + nums[2] + nums[4] = 0 + 1 + (-1) = 0.
 nums[0] + nums[3] + nums[4] = (-1) + 2 + (-1) = 0.
 The distinct triplets are [-1,0,1] and [-1,-1,2].
 Notice that the order of the output and the order of the triplets does not matter.
+
+Explanation: 
+This approach builds over 2 sum where input is sorted.  
+Also, one must keep in mind of skipping duplicates
  * 
 */
 
@@ -365,7 +369,7 @@ public List<List<Integer>> threeSum(int[] nums) {
     Arrays.sort(nums);
 
     for(int i = 0;i < nums.length-2; i++){
-        if(i > 0 && nums[i] == nums[i-1])
+        if(i > 0 && nums[i] == nums[i-1]) //skip duplicates
             continue;
 
         int left = i+1;
@@ -379,7 +383,7 @@ public List<List<Integer>> threeSum(int[] nums) {
                 while(left < right && nums[left] == nums[left+1]) //skip duplicates
                     left++;
                 
-                while(left < right && nums[right] == nums[right-1])
+                while(left < right && nums[right] == nums[right-1]) //skip diplicates
                     right--;
                 
                 left++;

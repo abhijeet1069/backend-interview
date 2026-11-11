@@ -5,6 +5,7 @@
 ### Arrays & Two Pointers
 
 - [x] LC 1: Two Sum
+- [ ] LC 167: Two Sum II - Input Array Is Sorted
 - [x] LC 121: Best Time to Buy and Sell Stock
 - [x] LC 217: Contains Duplicate
 - [x] LC 238: Product of Array Except Self
@@ -15,7 +16,7 @@
 - [x] LC 26: Remove Duplicates from Sorted Array
 - [x] LC 27: Remove Element
 - [x] LC 977: Squares of a Sorted Array
-- [x] LC 15: 3Sum
+- [x] LC 15: 3Sum - good problem
 - [x] LC 11: Container With Most Water
 - [x] LC 42: Trapping Rain Water
 - [x] LC 75: Sort Colors
