@@ -45,10 +45,10 @@ A comprehensive interview-preparation map for experienced Java/Spring backend ro
 
 ### Core Java
 
-- [ ] Variables and data types
-- [ ] Primitive vs reference types
-- [ ] Classes and objects
-- [ ] Constructors
+- [x] Variables and data types
+- [x] Primitive vs reference types
+- [x] Classes and objects
+- [x] Constructors
 - [ ] `this`
 - [ ] `static`
 - [ ] `final`
