@@ -266,17 +266,25 @@ public void moveZeroes(int[] nums) {
 Given an integer array nums sorted in non-decreasing order, remove the duplicates 
 in-place such that each unique element appears only once. The relative order of the 
 elements should be kept the same.
+
+Input: nums = [0,0,1,1,1,2,2,3,3,4]
+Output: 5, nums = [0,1,2,3,4,_,_,_,_,_]
+Explanation: Your function should return k = 5, with the first five elements of nums 
+being 0, 1, 2, 3, and 4 respectively.
+It does not matter what you leave beyond the returned k (hence they are underscores).
 */
 
 public int removeDuplicates(int[] nums) {
-        int index = 1;
-        for(int i = 1;i < nums.length; i++){
-            if(nums[i] != nums[index]){
-                index++;
-                nums[index] = nums[i];
-            }
-        }
-        return index;
+		if(nums.length <=1 )
+			return nums.length;
+		int l = 1; //next position to write
+		for(int r = 1; r < nums.length; r++) {
+			if(nums[l-1] != nums[r]) { //l-1 is so counter intutive
+				nums[l] = nums[r];
+				l++;
+			}
+		}
+		return l;
     }
 ```
 
@@ -290,18 +298,21 @@ public int removeDuplicates(int[] nums) {
  * 
  * Input: nums = [3,2,2,3], val = 3
    Output: 2, nums = [2,2,_,_]
+
+   Explanation:
+   Increment pointer only on non similar elements, else stay as it is and over-write same elements
  * 
 */
 
 public int removeElement(int[] nums, int val) {
-    int usefulElementCount = 0;
-    for(int i = 0; i < nums.length; i++){
-        if(nums[i] != val){
-            nums[usefulElementCount] = nums[i];
-            usefulElementCount++;
-        }
-    }
-        return usefulElementCount;
+		int l = 0;
+		for(int i = 0; i < nums.length; i++) {
+			if(nums[i] != val) {
+				nums[l] = nums[i];
+				l++;
+			}
+		}
+		return l;
     }
 ```
 
@@ -314,8 +325,10 @@ public int removeElement(int[] nums, int val) {
  * 
  * Input: nums = [-4,-1,0,3,10]
 Output: [0,1,9,16,100]
-Explanation: After squaring, the array becomes [16,1,0,9,100].
-After sorting, it becomes [0,1,9,16,100].
+
+Explanation:
+Absolute value of left and right elements are compared, 
+and higher element is filled from last. 
  * 
 */
 

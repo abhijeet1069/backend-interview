@@ -16,7 +16,7 @@
 - [x] LC 26: Remove Duplicates from Sorted Array
 - [x] LC 27: Remove Element
 - [x] LC 977: Squares of a Sorted Array
-- [x] LC 15: 3Sum - good problem
+- [x] LC 15: 3Sum (good problem)
 - [x] LC 11: Container With Most Water
 - [x] LC 42: Trapping Rain Water
 - [x] LC 75: Sort Colors
