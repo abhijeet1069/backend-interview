@@ -114,19 +114,20 @@ Input: nums = [-1,1,0,-3,3]
 Output: [0,0,9,0,0]
 */
 public int[] productExceptSelf(int[] nums) {
-        //no need of separate prefix[] and suffix[],
-        // in one prod[] job can be done, as prefix calculated first then suffix
-        int[] prod = new int[nums.length];
-        prod[0] = 1;
-        for(int i  = 1; i < nums.length; i++)
-            prod[i] = prod[i-1]*nums[i-1]; //till here prod has prefix sum
-
-        int suff = 1;
-        for(int i = nums.length-1; i >= 0; i--){
-            prod[i] *= suff;
-            suff *= nums[i]; //no need of suff[] only single variable is enough
+		//more optimized solution than allocating prefix and suffix array
+		int prefixProduct = 1;
+        int[] result = new int[nums.length];
+        for(int i = 0; i < nums.length; i++) {
+        	result[i] = prefixProduct;
+        	prefixProduct *= nums[i]; //this is intelligent, as avoided using i-1
         }
-        return prod;
+        
+        int suffixProduct = 1;
+        for(int i = nums.length-1; i >= 0; i--) {
+        	result[i] *= suffixProduct; //combined prefix and suffix
+        	suffixProduct *= nums[i];
+        }
+        return result;
     }
 ```
 ## 5. Maximum Subarray — Kadane algorithm
@@ -142,17 +143,19 @@ Example 1:
 Input: nums = [-2,1,-3,4,-1,2,1,-5,4]
 Output: 6
 Explanation: The subarray [4,-1,2,1] has the largest sum 6.
+
+Kadane is interesting as at each loop it asks whether current element is contributing more
+or extending subarray is more 
  * 
 */
 public int maxSubArray(int[] nums) {
-    int currSum = nums[0];
-    int maxSum = nums[0];
-    for(int i = 1; i < nums.length; i++){
-        //at each stage we are asking to extend subarray, or to start a fresh one
-        currSum = Math.max(currSum+nums[i],nums[i]);
-        maxSum = Math.max(maxSum,currSum);
-    }
-    return maxSum;
+        int max = nums[0];
+        int maxEnding = nums[0]; //the maximum sum of a contiguous subarray that MUST end at the current index.
+        for(int i = 1; i < nums.length; i++) {
+        	maxEnding = Math.max(nums[i], maxEnding+nums[i]); //extend current subarray or start fresh with nums[i]?
+        	max = Math.max(max, maxEnding);
+        }
+        return max;
     }
 ```
 
@@ -166,25 +169,29 @@ public int maxSubArray(int[] nums) {
  * Input: nums = [2,3,-2,4]
    Output: 6
    Explanation: [2,3] has the largest product 6.
+
+   Input: nums = [-2,3,-4]
+   Output: 24
 */
 public int maxProduct(int[] nums) {
-    int minProd = nums[0];
-    int maxProd = nums[0];
-    int result = nums[0];
-    for(int i = 1; i < nums.length; i++){
-        //property of negative numbers, flips the whole scene
-        //make largest number to smallest and smallest to largest
-        if(nums[i] < 0){
-            int temp = maxProd;
-            maxProd = minProd;
-            minProd = temp;
+        int maxEnding = nums[0];
+        int minEnding = nums[0];
+        int max = nums[0];
+        
+        for(int i = 1; i < nums.length; i++) {
+        	if(nums[i] < 0) {
+        		int temp = maxEnding;
+        		maxEnding = minEnding;
+        		minEnding = temp;
+        	}
+        	maxEnding = Math.max(nums[i], maxEnding*nums[i]);
+        	minEnding = Math.min(nums[i], minEnding*nums[i]);
+        	
+        	max = Math.max(max, maxEnding);
         }
-        maxProd = Math.max(maxProd*nums[i],nums[i]);
-        minProd = Math.min(minProd*nums[i],nums[i]);
-        result = Math.max(result,maxProd);
-        }
-        return result;
-    }
+        
+        return max;
+    }	
 ```
 
 ## 7. Merge Sorted Array - Mergesort part

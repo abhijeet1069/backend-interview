@@ -10,13 +10,13 @@
 - [x] LC 217: Contains Duplicate
 - [x] LC 238: Product of Array Except Self
 - [x] LC 53: Maximum Subarray
-- [x] LC 152: Maximum Product Subarray
+- [x] LC 152: Maximum Product Subarray - tricky
 - [x] LC 88: Merge Sorted Array
 - [x] LC 283: Move Zeroes
 - [x] LC 26: Remove Duplicates from Sorted Array
 - [x] LC 27: Remove Element
 - [x] LC 977: Squares of a Sorted Array
-- [x] LC 15: 3Sum (good problem)
+- [x] LC 15: 3Sum - tricky
 - [x] LC 11: Container With Most Water
 - [x] LC 42: Trapping Rain Water
 - [x] LC 75: Sort Colors
