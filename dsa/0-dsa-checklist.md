@@ -5,7 +5,7 @@
 ### Arrays & Two Pointers
 
 - [x] LC 1: Two Sum
-- [ ] LC 167: Two Sum II - Input Array Is Sorted
+- [x] LC 167: Two Sum II - Input Array Is Sorted
 - [x] LC 121: Best Time to Buy and Sell Stock
 - [x] LC 217: Contains Duplicate
 - [x] LC 238: Product of Array Except Self

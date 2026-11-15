@@ -31,21 +31,21 @@ Output: 12.75000
 Explanation: Maximum average is (12 - 5 - 6 + 50) / 4 = 51 / 4 = 12.75
 */
 public double findMaxAverage(int[] nums, int k) {
-    //window of fixed size, just slide over the array
-    //initial window size
-    int currSum = 0;
-    for(int i = 0;i < k; i++)
-        currSum += nums[i];
-    
-    int maxSum = currSum;
-    for(int l = 1, r = k; r < nums.length; l++,r++){
-        currSum = currSum - nums[l-1] + nums[r]; //exclude the previous element and include the next element
-        if(currSum > maxSum)
-            maxSum = currSum;
-        }
-    // average is directly proportional to sum, so we optimized for sum
-    return (double)maxSum/k;
+    int sum = 0;
+    int maxSum = 0;
+    //calculate initial sum, here window is fixed
+    for(int i = 0; i < k; i++)
+        sum += nums[i];
+
+    maxSum = sum;
+        
+    for(int i = k; i < nums.length; i++) {
+        sum = sum+nums[i]-nums[i-k]; //extend the window and find max
+        maxSum = Math.max(maxSum, sum);
     }
+        
+    return (double)maxSum/k;
+}
 ```
 
 ## Longest Substring Without Repeating Characters - Sliding window of variable size
@@ -61,20 +61,19 @@ Explanation: The answer is "abc", with the length of 3. Note that "bca" and "cab
 correct answers.
 */
 
-public int lengthOfLongestSubstring(String s) {
-        int l = 0;
-        int maxLen = 0;
-        Set<Character> set = new HashSet<>();
-        for(int r = 0; r < s.length(); r++){
-
-            while(set.contains(s.charAt(r))){ // set here contains previous loop character
-                set.remove(s.charAt(l));
-                l++;
-            }
-            set.add(s.charAt(r)); //increasing the window can come after also
-            maxLen = Math.max(maxLen, r-l+1);
+    public int lengthOfLongestSubstring(String s) {
+		Set<Character> set = new HashSet<>();
+		int result = 0;
+		for(int l = 0, r = 0; r < s.length(); r++) {
+			//reduce until no duplicates
+            while(set.contains(s.charAt(r))) {
+        		set.remove(s.charAt(l));
+				l++;
+        	}
+			result = Math.max(result, r-l+1);
+			set.add(s.charAt(r));
         }
-        return maxLen;
+		return result;
     }
 ```
 
