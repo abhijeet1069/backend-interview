@@ -39,12 +39,12 @@ to verify they work exactly as expected.
 ```java
 
     @ParameterizedTest
-    @MethodSource("stringListData")
+    @MethodSource("testData")
     void should_return_list_of_strings_length(List<String> input, List<Integer> expected) {
         assertEquals(expected, getLength(input));
     }
 
-    static Stream<Arguments> stringListData(){
+    static Stream<Arguments> testData(){
         return Stream.of(
                 Arguments.of(
                         List.of("Fe","Fi","Fo","Fum"),
