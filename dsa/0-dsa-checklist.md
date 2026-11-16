@@ -4,24 +4,24 @@
 
 ### Arrays & Two Pointers
 
-- [x] LC 1: Two Sum
-- [x] LC 167: Two Sum II - Input Array Is Sorted
-- [x] LC 121: Best Time to Buy and Sell Stock
-- [x] LC 217: Contains Duplicate
-- [x] LC 238: Product of Array Except Self
-- [x] LC 53: Maximum Subarray
-- [x] LC 152: Maximum Product Subarray - tricky
-- [x] LC 88: Merge Sorted Array
-- [x] LC 283: Move Zeroes
-- [x] LC 26: Remove Duplicates from Sorted Array
-- [x] LC 27: Remove Element
-- [x] LC 977: Squares of a Sorted Array
-- [x] LC 15: 3Sum - tricky
-- [x] LC 11: Container With Most Water
-- [x] LC 42: Trapping Rain Water
-- [x] LC 75: Sort Colors
-- [x] LC 189: Rotate Array
-- [x] LC 169: Majority Element
+- [xx] LC 1: Two Sum
+- [xx] LC 167: Two Sum II - Input Array Is Sorted
+- [xx] LC 121: Best Time to Buy and Sell Stock
+- [xx] LC 217: Contains Duplicate
+- [xx] LC 238: Product of Array Except Self
+- [xx] LC 53: Maximum Subarray
+- [xx] LC 152: Maximum Product Subarray - tricky
+- [xx] LC 88: Merge Sorted Array
+- [xx] LC 283: Move Zeroes
+- [xx] LC 26: Remove Duplicates from Sorted Array
+- [xx] LC 27: Remove Element
+- [xx] LC 977: Squares of a Sorted Array
+- [xx] LC 15: 3Sum - tricky
+- [xx] LC 11: Container With Most Water
+- [xx] LC 42: Trapping Rain Water
+- [xx] LC 75: Sort Colors
+- [xx] LC 189: Rotate Array
+- [xx] LC 169: Majority Element
 - [ ] LC 1109: Corporate Flight Bookings 
 - [ ] LC 1094: Car Pooling
 - [ ] LC 2381: Shifting Letters II 
@@ -31,11 +31,11 @@
 
 Needs more efforts.
 
-- [x] LC 643: Maximum Average Subarray I
-- [x] LC 3:  Longest Substring Without Repeating Characters
-- [x] LC 424:  Longest Repeating Character Replacement
-- [x] LC 567: Permutation in String
-- [x] LC 438:  Find All Anagrams in a String
+- [xx] LC 643: Maximum Average Subarray I
+- [xx] LC 3:  Longest Substring Without Repeating Characters
+- [xx] LC 424:  Longest Repeating Character Replacement - tricky
+- [xx] LC 567: Permutation in String
+- [xx] LC 438:  Find All Anagrams in a String
 - [x] LC 209: Minimum Size Subarray Sum
 - [x] LC 76: Minimum Window Substring
 - [x] LC 239: Sliding Window Maximum — Used monotonic queue, was challenging.

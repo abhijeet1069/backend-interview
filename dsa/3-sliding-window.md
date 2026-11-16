@@ -101,6 +101,7 @@ public int characterReplacement(String s, int k) {
     for(int r = 0;r < s.length(); r++){
         char c = s.charAt(r);
         freq[c-'A']++;
+        //its interesting maxFreq never updates inside while loop
         maxFreq = Math.max(maxFreq,freq[c-'A']);
         while((r-l+1) - maxFreq > k){
             freq[s.charAt(l)-'A']--;
@@ -121,6 +122,9 @@ public int characterReplacement(String s, int k) {
  * Input: s1 = "ab", s2 = "eidbaooo"
 Output: true
 Explanation: s2 contains one permutation of s1 ("ba").
+
+This problem uses sliding window of fixed size pattern,
+where the window size is the length of smaller string
 */
 
 public boolean checkInclusion(String s1, String s2) {
