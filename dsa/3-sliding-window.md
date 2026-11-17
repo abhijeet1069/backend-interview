@@ -195,6 +195,9 @@ public int minSubArrayLen(int target, int[] nums) {
  * Input: s = "ADOBECODEBANC", t = "ABC"
 Output: "BANC"
 Explanation: The minimum window substring "BANC" includes 'A', 'B', and 'C' from string t.
+
+Here we need to return the subarray, and we can't compare all the window 
+elements. So, the optimisation of required is used.
  * 
 */
 
@@ -218,7 +221,7 @@ public String minWindow(String s, String t) {
 
             char c = s.charAt(right);
             if (freq[c] > 0) {
-                required--; //required is such a counter-intutive solution
+                required--;
             }
             freq[c]--;
 
@@ -248,18 +251,18 @@ public String minWindow(String s, String t) {
 
 ## Sliding Window Maximum
 
-Such problems can easily remove candidates who have not practised Leetcode.
-Cannot be solved in first glance.
-
 ```java
 public int[] maxSlidingWindow(int[] nums, int k) {
     Deque<Integer> deque = new ArrayDeque<>();
     int[] res = new int[nums.length-k+1];
 
     for(int i = 0; i < nums.length; i++){
+        
+        //removes left side of window
         while (!deque.isEmpty() && deque.peekFirst() <= i-k)
             deque.removeFirst();
-
+        
+        //remove smaller elements from last
         while (!deque.isEmpty() && nums[deque.peekLast()] <= nums[i])
             deque.removeLast();
 
