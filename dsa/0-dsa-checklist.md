@@ -38,7 +38,7 @@ Needs more efforts.
 - [xx] LC 438:  Find All Anagrams in a String
 - [xx] LC 209: Minimum Size Subarray Sum
 - [xx] LC 76: Minimum Window Substring - tricky and more revision required
-- [x] LC 239: Sliding Window Maximum — Used monotonic queue, was challenging.
+- [xx] LC 239: Sliding Window Maximum — Used monotonic queue, was challenging.
 
 ### Math / Number Theory
 
