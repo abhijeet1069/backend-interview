@@ -9,8 +9,8 @@
 - [xx] LC 121: Best Time to Buy and Sell Stock
 - [xx] LC 217: Contains Duplicate
 - [xx] LC 238: Product of Array Except Self
-- [xx] LC 53: Maximum Subarray
-- [xx] LC 152: Maximum Product Subarray - tricky
+- [xx] LC 53: Maximum Subarray - uses Kadane's algorithm
+- [xx] LC 152: Maximum Product Subarray - tricky, uses modified Kadane's algorithm
 - [xx] LC 88: Merge Sorted Array
 - [xx] LC 283: Move Zeroes
 - [xx] LC 26: Remove Duplicates from Sorted Array
@@ -29,8 +29,6 @@
 
 ### Sliding Window
 
-Needs more efforts.
-
 - [xx] LC 643: Maximum Average Subarray I
 - [xx] LC 3:  Longest Substring Without Repeating Characters
 - [xx] LC 424:  Longest Repeating Character Replacement - tricky
@@ -38,14 +36,14 @@ Needs more efforts.
 - [xx] LC 438:  Find All Anagrams in a String
 - [xx] LC 209: Minimum Size Subarray Sum
 - [xx] LC 76: Minimum Window Substring - tricky and more revision required
-- [xx] LC 239: Sliding Window Maximum — Used monotonic queue, was challenging.
+- [xx] LC 239: Sliding Window Maximum — tricky used monotonic queue
 
 ### Math / Number Theory
 
 - [x] LC 412: Fizz Buzz
 - [x] LC 9: Palindrome Number
-- [x] LC 7: Reverse Integer
-- [ ] LC 202: Happy Number 
+- [x] LC 7: Reverse Integer - good problem, one needs to know Integer.MAX_VALUE
+- [x] LC 202: Happy Number - good problem, uses Floyd's cycle detection algorithm
 - [ ] LC 50: Pow(x, n)
 - [ ] LC 69: Sqrt(x)
 - [ ] LC 204: Count Primes
