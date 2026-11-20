@@ -44,7 +44,7 @@
 - [x] LC 9: Palindrome Number
 - [x] LC 7: Reverse Integer - good problem, one needs to know Integer.MAX_VALUE
 - [x] LC 202: Happy Number - good problem, uses Floyd's cycle detection algorithm
-- [ ] LC 50: Pow(x, n)
+- [x] LC 50: Pow(x, n)
 - [ ] LC 69: Sqrt(x)
 - [ ] LC 204: Count Primes
 - [ ] LC 171: Excel Sheet Column Number

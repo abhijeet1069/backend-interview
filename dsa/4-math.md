@@ -1,7 +1,56 @@
 # Math and Number Theory
 
+## Java primtive types and sizes
+
+* int
+    * size - 32 bits
+    * Value Range -  -2,147,483,648 to 2,147,483,647 (-2^31 to 2^31-1)
+    * Default value -  0
+
+* long
+    * size - 64 bits
+    * Value Range -  -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 (-2^63 to 2^63-1)
+    * Default value -  0L
+
+* float
+    * size - 32 bits
+    * Value Range -  6-7 digits of precision
+    * Default value -  0.0f
+
+* double
+    * size - 64 bits
+    * Value Range -  15-17 digits of precision
+    * Default value -  0.0fd
+
+* char
+    * size - 16 bits
+    * Value Range -  0 - 65,535 (\u0000 to \uffff)
+    * Default value -  \u0000
+
 ## Fast exponentation
 
+```java
+/*
+Fast exponentiation (binary exponentiation) is an algorithm to calculate powers efficiently.
+
+a^n = (a^(a/2))^2 ; if n is even
+a^n = a*(a^(n-1/2))^2 ; if n is odd
+
+This reduces number of operations from O(n) to O(log n)
+ * **/
+public class FastExponentiation {
+	public long pow(long base, int exp) {
+		long result = 1;
+		while(exp > 0) {
+			if(exp%2 == 1)
+				result *= base;
+			base*=base;
+			exp /= 2;
+		}
+		return result;
+	}
+}
+```
 
 ## LC 412: Fizz Buzz
 
